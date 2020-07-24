@@ -1,6 +1,7 @@
 
       controlCharacter: -
       defaultCharacter: Tysandr
+      defaultGame     : Achaea
       
       wrapLimit       : 0
       showTimestamp   : true
