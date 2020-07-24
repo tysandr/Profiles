@@ -1,0 +1,9 @@
+
+      controlCharacter: -
+      defaultCharacter: Tysandr
+      
+      wrapLimit       : 0
+      showTimestamp   : true
+      echoInput       : false
+      outputLimit     : 1800
+    
