@@ -1,7 +1,6 @@
  
- ~/Achaea/Tysandr/
- ~/IRE/pdb.js
- ~/Achaea/General/bashing.js
- Live Logs, https://raw.githubusercontent.com/QueryOne/Nexus/master/Live-Logs/live-logs-nexus.js
- Talismans, https://github.com/QueryOne/IRE/blob/master/Achaea/talismans.js
- Orange Juice, https://raw.githubusercontent.com/QueryOne/Nexus/master/OrangeJuice/orange-juice.js
+Main, ~/Achaea/Tysandr/
+Main/Bashing, ~/Achaea/General/bashing.js
+Main/PDB, ~/IRE/pdb.js
+Misc/Live Logs, https://raw.githubusercontent.com/QueryOne/Nexus/master/Live-Logs/live-logs-nexus.js
+Misc/Talismans, https://github.com/QueryOne/IRE/blob/master/Achaea/talismans.js
