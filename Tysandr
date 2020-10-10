@@ -19,7 +19,7 @@
     "type": "folder",
     "id": "QO-5rr6sk",
     "desc": "",
-    "is_open": true,
+    "is_open": false,
     "output": "/*\n > Self/System\n   >> References the system and performs meta tasks\n   >> Handles initial GMCP routing\n   >> Includes:\n       [ ] performance manager\n       [ ] remote data manager\n       [ ] debugging\n       [ ] timing\n       [-] window manager\n       [ ] logging protocol\n       [x] trigger manager\n       [ ] keybinds\n       [ ] color manager\n       \n */",
     "children": [
       {
@@ -66,7 +66,7 @@
         "type": "folder",
         "id": "QO-47ql8y",
         "desc": "",
-        "is_open": true,
+        "is_open": false,
         "children": [
           {
             "name": "meta.local",
@@ -87,7 +87,7 @@
         "type": "folder",
         "id": "QO-jlabyg",
         "desc": "",
-        "is_open": true,
+        "is_open": false,
         "children": [
           {
             "name": "svw, subviews",
@@ -896,7 +896,7 @@
     "type": "folder",
     "id": "QO-48xl1h",
     "desc": "",
-    "is_open": true,
+    "is_open": false,
     "children": [
       {
         "name": "bashing",
@@ -1117,7 +1117,7 @@
         "type": "folder",
         "id": "QO-rfg6wg",
         "desc": "",
-        "is_open": true,
+        "is_open": false,
         "children": [
           {
             "name": "bash.crits",
@@ -1248,7 +1248,7 @@
     "type": "folder",
     "id": "QO-dpp42p",
     "desc": "",
-    "is_open": true,
+    "is_open": false,
     "children": [
       {
         "name": "Chat Window",
@@ -1569,7 +1569,7 @@
         "type": "folder",
         "id": "QO-qwdjas",
         "desc": "",
-        "is_open": true,
+        "is_open": false,
         "children": [
           {
             "name": "prospecting",
