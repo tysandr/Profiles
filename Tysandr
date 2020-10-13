@@ -19,7 +19,7 @@
     "type": "folder",
     "id": "QO-5rr6sk",
     "desc": "",
-    "is_open": false,
+    "is_open": true,
     "output": "/*\n > Self/System\n   >> References the system and performs meta tasks\n   >> Handles initial GMCP routing\n   >> Includes:\n       [ ] performance manager\n       [ ] remote data manager\n       [ ] debugging\n       [ ] timing\n       [-] window manager\n       [ ] logging protocol\n       [x] trigger manager\n       [ ] keybinds\n       [ ] color manager\n       \n */",
     "children": [
       {
@@ -87,7 +87,7 @@
         "type": "folder",
         "id": "QO-jlabyg",
         "desc": "",
-        "is_open": false,
+        "is_open": true,
         "children": [
           {
             "name": "svw, subviews",
@@ -1255,7 +1255,7 @@
         "type": "folder",
         "id": "QO-mrm5yv",
         "desc": "",
-        "is_open": false,
+        "is_open": true,
         "children": [
           {
             "name": "chat, initial",
@@ -1702,6 +1702,21 @@
           "^You step into a small boat, which is lowered to the water and rowed to (Floating ship wreckage) by a pair of burly oarsmen\\. After you disembark, the rowboat returns to the windcutter, which sets sail in the direction from whence you came\\.$"
         ],
         "output": ""
+      }
+    ]
+  },
+  {
+    "name": "Youtube",
+    "type": "folder",
+    "id": "QO-x7jpwi",
+    "desc": "",
+    "is_open": true,
+    "children": [
+      {
+        "name": "ytube",
+        "type": "script",
+        "id": "QO-mkll34",
+        "output": "ytube = (function(){\n  let divID = 'youtube-container'\n  let className = 'youtube-CSS'\n  \n  let CSSDefaults = `\n    #youtube-container {\n      position: absolute;\n      left: 50%;\n      top : 0%;\n      height: 450px;\n      width: 600px;\n      border-radius: 5px;\n      border: 1px solid rgba(25, 25, 25, 1);\n      background: rgba(14, 14, 14, 1);\n      background-image: url('./core/resources/raster.png');\n    }\n  `\n  \n  let inject = function(rule) {\n    if (!rule) { return }\n    $('body').append('<div class=\"' + className + '\">&shy;<style>' + rule + '</style></div>')\n  }\n\n  let rules = function() {\n    $('.' + className).remove()\n    \n    \n  }\n    \n  let create = function() {\n    $('#' + divID).remove()\n    var str = ''\n    str += '<div id=\"' + divID + '\">'\n    str +=  '<div id=\"youtube-header\">'\n    str +=    '<div id=\"youtube-search\"><input></input></div>'\n    str +=    '<div id=\"youtube-close\">x</div>'\n    str +=  '</div>'\n    str +=  '<div id=\"youtube-list\">'\n    str +=  '</div>'\n    str +=  '<div id=\"youtube-content\">'\n    str +=  '</div>'\n    str += '</div>'\n    $('body').append(str)\n    $('#' + divID)\n      .draggable({})\n      .resizable({})\n  }\n  \n  return {\n    create: create,  \n  }\n})()\n\nytube.create()"
       }
     ]
   }
