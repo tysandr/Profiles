@@ -945,16 +945,6 @@
         ]
       },
       {
-        "name": "bash, gold+",
-        "type": "trigger",
-        "id": "QO-dtid6j",
-        "patterns": [
-          "^You pick up (\\d+) gold sovereigns\\.$",
-          "^You scoop up (\\d+) gold sovereigns\\.$"
-        ],
-        "output": "bash.aggregator.gold(matches[1])"
-      },
-      {
         "name": "bash (.+?)",
         "type": "alias",
         "id": "QO-fx3j0n",
@@ -982,127 +972,148 @@
         "output": "bash.aggregator.recall()"
       },
       {
-        "name": "balance+",
-        "type": "trigger",
-        "id": "QO-dl3b2f",
-        "patterns": [
-          "^You have recovered (balance) on all limbs\\.$"
-        ],
-        "output": "if (bash.state === 1) {\n  bash.attack()\n}"
-      },
-      {
-        "name": "equilibrium+",
-        "type": "trigger",
-        "id": "QO-wuqa7x",
-        "patterns": [
-          "^You have recovered equilibrium\\.$"
-        ],
-        "output": "if (bash.state === 1) {\n  bash.attack()\n}"
-      },
-      {
-        "name": "attempt+",
-        "type": "trigger",
-        "id": "QO-jwrz7b",
-        "patterns": [
-          "^You stand up\\.$",
-          "^You are no longer stunned\\.$",
-          "^Your muscles unlock; you are no longer paralysed\\.$",
-          "^You have writhed free of your entanglement by webs\\.$"
-        ],
-        "output": "if (bash.state === 1) {\n  bash.attack()\n}"
-      },
-      {
-        "name": "slain+",
-        "type": "trigger",
-        "id": "QO-0bb2g7",
-        "patterns": [
-          "^You have slain (.+?), retrieving the corpse\\.$"
-        ],
-        "output": "sub(matches[1], '<span class=\"darkred\">' + matches[1] + '</span>')\n\nbash.aggregator.accrete(matches[1])"
-      },
-      {
-        "name": "shield+",
-        "type": "trigger",
-        "id": "QO-iyt5qq",
-        "patterns": [
-          "^A nearly invisible magical shield forms around (.+?)\\.$"
-        ],
-        "output": "bash.shielded = true\nif (bash.state === 1) { bash.attack() } // reset the attack"
-      },
-      {
-        "name": "shield rebound",
-        "type": "trigger",
-        "id": "QO-gdhoev",
-        "patterns": [
-          "^A dizzying beam of energy strikes you as your attack rebounds off of (.+?)\\'s shield\\.$"
-        ],
-        "output": "bash.shielded = true\nif (bash.state === 1) { bash.attack() } // reset the attack"
-      },
-      {
-        "name": "shielded-",
-        "type": "trigger",
-        "id": "QO-df59l3",
-        "patterns": [
-          "^You prepare yourself to flick your tail at (.+?) before realising that doing so would not actually do anything\\.$",
-          "^You flick your tail at (.+?), dismissively brushing aside the paltry shield protecting (?:him|her)\\.$"
-        ],
-        "output": "bash.shielded = false\nif (bash.state === 1) { bash.attack() } // reset the attack"
-      },
-      {
-        "name": "diagnose",
-        "type": "trigger",
-        "id": "QO-buxxtf",
-        "patterns": [
-          "^You are\\:$"
-        ],
-        "output": "bash.unknownToxins = 0"
-      },
-      {
-        "name": "toxin, unknown",
-        "type": "trigger",
-        "id": "QO-tw1s8s",
-        "patterns": [
-          "^You are confused as to the effects of the venom\\.$"
-        ],
-        "output": "bash.unknownToxins += 1\n\nTriggers.ignore(true)\nsub(matches[0], '<span class=\"darkyellow\">' + matches[0] + '</span>')"
-      },
-      {
-        "name": "Additional Triggers",
+        "name": "Bashing Triggers",
         "type": "folder",
-        "id": "QO-slejx3",
+        "id": "QO-uk9w36",
         "desc": "",
-        "is_open": false,
+        "is_open": true,
         "children": [
           {
-            "name": "gold drop+",
-            "type": "trigger",
-            "id": "QO-ojuldj",
-            "patterns": [
-              "^A large pile of sovereigns spills from the corpse\\.$",
-              "^Numerous golden sovereigns spill from the corpse\\.$",
-              "^A small pile of sovereigns spills from the corpse\\.$"
-            ],
-            "output": "bash.goldHere = true"
+            "name": "Logic Triggers",
+            "type": "folder",
+            "id": "QO-7o2ucs",
+            "desc": "",
+            "is_open": false,
+            "children": [
+              {
+                "name": "slain+",
+                "type": "trigger",
+                "id": "QO-0bb2g7",
+                "patterns": [
+                  "^You have slain (.+?), retrieving the corpse\\.$"
+                ],
+                "output": "sub(matches[1], '<span class=\"darkred\">' + matches[1] + '</span>')\n\nbash.aggregator.accrete(matches[1])"
+              },
+              {
+                "name": "retry+",
+                "type": "trigger",
+                "id": "QO-jwrz7b",
+                "patterns": [
+                  "^You have recovered (balance) on all limbs\\.$",
+                  "^You have recovered equilibrium\\.$",
+                  "^You stand up\\.$",
+                  "^You are no longer stunned\\.$",
+                  "^Your muscles unlock; you are no longer paralysed\\.$",
+                  "^You have writhed free of your entanglement by webs\\.$"
+                ],
+                "output": "if (bash.state === 1) {\n  bash.attack()\n}"
+              },
+              {
+                "name": "shield+",
+                "type": "trigger",
+                "id": "QO-iyt5qq",
+                "patterns": [
+                  "^A nearly invisible magical shield forms around (.+?)\\.$"
+                ],
+                "output": "bash.shielded = true\nif (bash.state === 1) { bash.attack() } // reset the attack"
+              },
+              {
+                "name": "shield rebound",
+                "type": "trigger",
+                "id": "QO-gdhoev",
+                "patterns": [
+                  "^A dizzying beam of energy strikes you as your attack rebounds off of (.+?)\\'s shield\\.$"
+                ],
+                "output": "bash.shielded = true\nif (bash.state === 1) { bash.attack() } // reset the attack"
+              },
+              {
+                "name": "shielded-",
+                "type": "trigger",
+                "id": "QO-df59l3",
+                "patterns": [
+                  "^You prepare yourself to flick your tail at (.+?) before realising that doing so would not actually do anything\\.$",
+                  "^You flick your tail at (.+?), dismissively brushing aside the paltry shield protecting (?:him|her)\\.$"
+                ],
+                "output": "bash.shielded = false\nif (bash.state === 1) { bash.attack() } // reset the attack"
+              },
+              {
+                "name": "diagnose",
+                "type": "trigger",
+                "id": "QO-buxxtf",
+                "patterns": [
+                  "^You are\\:$"
+                ],
+                "output": "bash.unknownToxins = 0"
+              },
+              {
+                "name": "toxin, unknown",
+                "type": "trigger",
+                "id": "QO-tw1s8s",
+                "patterns": [
+                  "^You are confused as to the effects of the venom\\.$"
+                ],
+                "output": "bash.unknownToxins += 1\n\nTriggers.ignore(true)\nsub(matches[0], '<span class=\"darkyellow\">' + matches[0] + '</span>')"
+              }
+            ]
           },
           {
-            "name": "gold drop-",
-            "type": "trigger",
-            "id": "QO-cdlq5a",
-            "patterns": [
-              "^I see no \\\"gold\\\" to take\\.$",
-              "^You pick up (\\d+) gold sovereigns\\.$",
-              "^You scoop up (\\d+) gold sovereigns\\.$"
-            ],
-            "output": "bash.goldHere = false"
+            "name": "Gold Triggers",
+            "type": "folder",
+            "id": "QO-vjoae9",
+            "desc": "",
+            "is_open": false,
+            "children": [
+              {
+                "name": "gold drop+",
+                "type": "trigger",
+                "id": "QO-ojuldj",
+                "patterns": [
+                  "^A large pile of sovereigns spills from the corpse\\.$",
+                  "^Numerous golden sovereigns spill from the corpse\\.$",
+                  "^A small pile of sovereigns spills from the corpse\\.$"
+                ],
+                "output": "bash.goldHere = true"
+              },
+              {
+                "name": "gold drop-",
+                "type": "trigger",
+                "id": "QO-cdlq5a",
+                "patterns": [
+                  "^I see no \\\"gold\\\" to take\\.$",
+                  "^You pick up (\\d+) gold sovereigns\\.$",
+                  "^You scoop up (\\d+) gold sovereigns\\.$"
+                ],
+                "output": "bash.goldHere = false"
+              },
+              {
+                "name": "bash, gold+",
+                "type": "trigger",
+                "id": "QO-dtid6j",
+                "patterns": [
+                  "^You pick up (\\d+) gold sovereigns\\.$",
+                  "^You scoop up (\\d+) gold sovereigns\\.$"
+                ],
+                "output": "bash.aggregator.gold(matches[1])"
+              }
+            ]
           },
           {
-            "name": "talisman+",
-            "type": "trigger",
-            "id": "QO-leoi6f",
-            "patterns": [
-              "^You have found (.+?) talisman piece\\!$"
-            ],
-            "output": "sub(matches[0], '<span class=\"violent\">' + matches[0] + '</span>')"
+            "name": "Miscellaneous",
+            "type": "folder",
+            "id": "QO-7vhc74",
+            "desc": "",
+            "is_open": false,
+            "children": [
+              {
+                "name": "talisman+",
+                "type": "trigger",
+                "id": "QO-leoi6f",
+                "patterns": [
+                  "^You have found (.+?) talisman piece\\!$"
+                ],
+                "output": "sub(matches[0], '<span class=\"violent\">' + matches[0] + '</span>')"
+              }
+            ]
           }
         ]
       },
@@ -1111,7 +1122,7 @@
         "type": "folder",
         "id": "QO-iyoe80",
         "desc": "",
-        "is_open": false,
+        "is_open": true,
         "children": [
           {
             "name": "bash.rage",
