@@ -988,7 +988,7 @@
         "type": "folder",
         "id": "QO-uk9w36",
         "desc": "",
-        "is_open": true,
+        "is_open": false,
         "children": [
           {
             "name": "Logic Triggers",
@@ -1114,7 +1114,7 @@
             "type": "folder",
             "id": "QO-7vhc74",
             "desc": "",
-            "is_open": true,
+            "is_open": false,
             "children": [
               {
                 "name": "talisman+",
