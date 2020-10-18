@@ -1132,7 +1132,7 @@
                 "patterns": [
                   "^(He|She) has (\\d+)\\% health remaining\\.$"
                 ],
-                "output": "let r = parseInt(matches[2])\nlet c = 'green'\nif (r < 20) {\n  c = 'hotred'\n} else if (r < 45) {\n  c = 'yellow'\n}\n\nsub(matches[0], '<span class=\"normal\">' + matches[0] + '</span>')\nsub(matches[2], '<span class=\"' + c + '\">' + matches[2] + '</span>')"
+                "output": "let r = parseInt(matches[2])\nlet c = 'green'\nif (r < 20) {\n  c = 'hotred'\n} else if (r < 45) {\n  c = 'yellow'\n}\n\nsub(matches[0], '<span class=\"normal\">' + matches[0] + '</span>')\nsub(matches[2], '<span class=\"' + c + '\">' + matches[2] + ' </span>')"
               }
             ]
           },
