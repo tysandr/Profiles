@@ -952,18 +952,12 @@
       },
       {
         "name": "bash.crits",
-        "type": "script",
-        "id": "QO-xc9mix",
-        "output": "bash.crits = typeof bash.crits != 'undefined' ? bash.crits : {}\nbash.crits.strikes = bash.crits.strikes || 0\n\nbash.critLoad = function() {\n  var bc = meta.local.read('bash-crits')\n  if (!bc) {\n    bc = bash.crits\n    meta.local.write('bash-crits', bc)\n  }\n}\nbash.critLoad()\n\nbash.critSave = function() {\n  meta.local.write('bash-crits', bash.crits)\n}\n\nbash.critDisplay = function() {\n  var rpad = Utilities.rpad\n  var lpad = Utilities.lpad\n  var round = Utilities.round2\n  \n  var currentTime = new Date()\n  var tstmp = ''\n  var mins  = currentTime.getMinutes()\n  var secs  = currentTime.getSeconds()\n  var mscs  = currentTime.getMilliseconds()\n      mins  = lpad(mins,2,'0')\n      secs  = lpad(secs,2,'0')\n      mscs  = lpad(mscs,3,'0')\n  tstmp = mins + ':' + secs + ':' + mscs + ' '\n  \n  var t = Utilities.clone(bash.crits)\n  var r = [\n      'CRITICAL',\n      'CRUSHING CRITICAL',\n      'OBLITERATING CRITICAL',\n      'ANNIHILATINGLY POWERFUL CRITICAL',\n      'WORLD-SHATTERING CRITICAL',\n      ]\n  var multipliers = [2,4,8,16,32]\n  var list = []\n      \n  var totalCrits = 0\n  var totalEffective = 0\n  for (var j = 0; j < r.length; j++) {\n    var n = t[r[j]] || 0\n    totalCrits += n\n\n    var multi = multipliers[j]\n    totalEffective += multi * n\n    \n    list.push({tier: r[j], count: n, effective: multi * n})\n  }\n  \n  var p = '<span class=\"timestamp\">' + tstmp + '</span>' + '<span class=\"mutrigger\">&compfn;</span> '\n  var d = ''\n  \n  var cr = bash.crits.strikes === 0 ? 0 : (totalCrits / bash.crits.strikes * 100).toFixed(1)\n  \n  d += p + '<span class=\"mute\">' + rpad('', 62, ' ') + '</span>\\n'\n  d += p + '<span class=\"normal\">' + rpad('Total Strikes', 34, ' ') + ' : ' + lpad(bash.crits.strikes,6,' ') + '</span>\\n'\n  d += p + '<span class=\"normal\">' + rpad('Crit Rate', 34, ' ') + ' : ' + lpad(totalCrits,6,' ')\n  d += '   ' + lpad(cr,5) + '%</span>\\n'\n  d += p + '<span class=\"mute\">' + rpad('', 62, '=') + '</span>\\n'\n  \n  for (var k = list.length - 1; k > -1; k--) {\n    var tier = list[k].tier\n    var count = list[k].count\n    var effective = list[k].effective\n    \n    d += p + '<span class=\"normal\">  ' + rpad(tier, 32, ' ') + ' : ' + lpad(count,6,' ')\n    d += '   ' + lpad((count / bash.crits.strikes * 100).toFixed(1), 5, ' ') + '%'\n    d += '   ' + lpad((effective / totalEffective * 100).toFixed(1), 5, ' ') + '%'\n    d += '</span>\\n'\n  }\n  \n  d += p + '<span class=\"mute\">' + rpad('', 62, '=') + '</span>\\n'\n  d += p + '<span class=\"mute\">' + rpad('', 62, ' ') + '</span>\\n'\n  \n  Core.printdown(d)\n}"
-      },
-      {
-        "name": "bash.crits",
         "type": "alias",
         "id": "QO-fkuiyw",
         "patterns": [
           "^crits$"
         ],
-        "output": "bash.aggregator.critDisplay()\n\n// bash.critDisplay()"
+        "output": "bash.aggregator.critDisplay()"
       },
       {
         "name": "bash (.+?)",
