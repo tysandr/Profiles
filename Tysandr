@@ -993,6 +993,15 @@
         "output": "if (bash.state === 1) {\n  bash.attack()\n}"
       },
       {
+        "name": "paralysis-",
+        "type": "trigger",
+        "id": "QO-tulaoz",
+        "patterns": [
+          "^Your muscles unlock; you are no longer paralysed\\.$"
+        ],
+        "output": "if (bash.state === 1) {\n  bash.attack()\n}"
+      },
+      {
         "name": "slain+",
         "type": "trigger",
         "id": "QO-0bb2g7",
@@ -1126,7 +1135,7 @@
         "type": "folder",
         "id": "QO-rfg6wg",
         "desc": "",
-        "is_open": true,
+        "is_open": false,
         "children": [
           {
             "name": "bash.crits",
