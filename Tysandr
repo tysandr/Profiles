@@ -951,6 +951,21 @@
         "output": "bash = typeof bash != 'undefined' ? bash : {}\n\nbash.rage = 0\nbash.rageAvailable = []\n\nbash.rageReset = function() {\n  bash.rage = 0\n  bash.rageAvailable = []\n}\n\nbash.rageParse = function(list) {\n  if (!list) { return }\n  let args = list.split(',')\n  args.forEach(function(e,v){\n    let h = e.trim()\n    if (bash.rageAvailable.indexOf(h) == -1) {\n      bash.rageAvailable.push(h)\n    }\n  })\n}"
       },
       {
+        "name": "bash.crits",
+        "type": "script",
+        "id": "QO-xc9mix",
+        "output": "bash.crits = typeof bash.crits != 'undefined' ? bash.crits : {}\nbash.crits.strikes = bash.crits.strikes || 0\n\nbash.critLoad = function() {\n  var bc = meta.local.read('bash-crits')\n  if (!bc) {\n    bc = bash.crits\n    meta.local.write('bash-crits', bc)\n  }\n}\nbash.critLoad()\n\nbash.critSave = function() {\n  meta.local.write('bash-crits', bash.crits)\n}\n\nbash.critDisplay = function() {\n  var rpad = Utilities.rpad\n  var lpad = Utilities.lpad\n  var round = Utilities.round2\n  \n  var currentTime = new Date()\n  var tstmp = ''\n  var mins  = currentTime.getMinutes()\n  var secs  = currentTime.getSeconds()\n  var mscs  = currentTime.getMilliseconds()\n      mins  = lpad(mins,2,'0')\n      secs  = lpad(secs,2,'0')\n      mscs  = lpad(mscs,3,'0')\n  tstmp = mins + ':' + secs + ':' + mscs + ' '\n  \n  var t = Utilities.clone(bash.crits)\n  var r = [\n      'CRITICAL',\n      'CRUSHING CRITICAL',\n      'OBLITERATING CRITICAL',\n      'ANNIHILATINGLY POWERFUL CRITICAL',\n      'WORLD-SHATTERING CRITICAL',\n      ]\n  var multipliers = [2,4,8,16,32]\n  var list = []\n      \n  var totalCrits = 0\n  var totalEffective = 0\n  for (var j = 0; j < r.length; j++) {\n    var n = t[r[j]] || 0\n    totalCrits += n\n\n    var multi = multipliers[j]\n    totalEffective += multi * n\n    \n    list.push({tier: r[j], count: n, effective: multi * n})\n  }\n  \n  var p = '<span class=\"timestamp\">' + tstmp + '</span>' + '<span class=\"mutrigger\">&compfn;</span> '\n  var d = ''\n  \n  var cr = bash.crits.strikes === 0 ? 0 : (totalCrits / bash.crits.strikes * 100).toFixed(1)\n  \n  d += p + '<span class=\"mute\">' + rpad('', 62, ' ') + '</span>\\n'\n  d += p + '<span class=\"normal\">' + rpad('Total Strikes', 34, ' ') + ' : ' + lpad(bash.crits.strikes,6,' ') + '</span>\\n'\n  d += p + '<span class=\"normal\">' + rpad('Crit Rate', 34, ' ') + ' : ' + lpad(totalCrits,6,' ')\n  d += '   ' + lpad(cr,5) + '%</span>\\n'\n  d += p + '<span class=\"mute\">' + rpad('', 62, '=') + '</span>\\n'\n  \n  for (var k = list.length - 1; k > -1; k--) {\n    var tier = list[k].tier\n    var count = list[k].count\n    var effective = list[k].effective\n    \n    d += p + '<span class=\"normal\">  ' + rpad(tier, 32, ' ') + ' : ' + lpad(count,6,' ')\n    d += '   ' + lpad((count / bash.crits.strikes * 100).toFixed(1), 5, ' ') + '%'\n    d += '   ' + lpad((effective / totalEffective * 100).toFixed(1), 5, ' ') + '%'\n    d += '</span>\\n'\n  }\n  \n  d += p + '<span class=\"mute\">' + rpad('', 62, '=') + '</span>\\n'\n  d += p + '<span class=\"mute\">' + rpad('', 62, ' ') + '</span>\\n'\n  \n  Core.printdown(d)\n}"
+      },
+      {
+        "name": "bash.crits",
+        "type": "alias",
+        "id": "QO-fkuiyw",
+        "patterns": [
+          "^crits$"
+        ],
+        "output": "bash.critDisplay()"
+      },
+      {
         "name": "bash (.+?)",
         "type": "alias",
         "id": "QO-fx3j0n",
@@ -1157,67 +1172,52 @@
                 "output": "let A = matches[1]\nlet B = parseFloat(A)\n\nbash.rage = B\n\nbash.rageParse(matches[2])"
               }
             ]
-          }
-        ]
-      },
-      {
-        "name": "Criticals",
-        "type": "folder",
-        "id": "QO-rfg6wg",
-        "desc": "",
-        "is_open": true,
-        "children": [
-          {
-            "name": "bash.crits",
-            "type": "script",
-            "id": "QO-xc9mix",
-            "output": "bash.crits = typeof bash.crits != 'undefined' ? bash.crits : {}\nbash.crits.strikes = bash.crits.strikes || 0\n\nbash.critLoad = function() {\n  var bc = meta.local.read('bash-crits')\n  if (!bc) {\n    bc = bash.crits\n    meta.local.write('bash-crits', bc)\n  }\n}\nbash.critLoad()\n\nbash.critSave = function() {\n  meta.local.write('bash-crits', bash.crits)\n}\n\nbash.critDisplay = function() {\n  var rpad = Utilities.rpad\n  var lpad = Utilities.lpad\n  var round = Utilities.round2\n  \n  var currentTime = new Date()\n  var tstmp = ''\n  var mins  = currentTime.getMinutes()\n  var secs  = currentTime.getSeconds()\n  var mscs  = currentTime.getMilliseconds()\n      mins  = lpad(mins,2,'0')\n      secs  = lpad(secs,2,'0')\n      mscs  = lpad(mscs,3,'0')\n  tstmp = mins + ':' + secs + ':' + mscs + ' '\n  \n  var t = Utilities.clone(bash.crits)\n  var r = [\n      'CRITICAL',\n      'CRUSHING CRITICAL',\n      'OBLITERATING CRITICAL',\n      'ANNIHILATINGLY POWERFUL CRITICAL',\n      'WORLD-SHATTERING CRITICAL',\n      ]\n  var multipliers = [2,4,8,16,32]\n  var list = []\n      \n  var totalCrits = 0\n  var totalEffective = 0\n  for (var j = 0; j < r.length; j++) {\n    var n = t[r[j]] || 0\n    totalCrits += n\n\n    var multi = multipliers[j]\n    totalEffective += multi * n\n    \n    list.push({tier: r[j], count: n, effective: multi * n})\n  }\n  \n  var p = '<span class=\"timestamp\">' + tstmp + '</span>' + '<span class=\"mutrigger\">&compfn;</span> '\n  var d = ''\n  \n  var cr = bash.crits.strikes === 0 ? 0 : (totalCrits / bash.crits.strikes * 100).toFixed(1)\n  \n  d += p + '<span class=\"mute\">' + rpad('', 62, ' ') + '</span>\\n'\n  d += p + '<span class=\"normal\">' + rpad('Total Strikes', 34, ' ') + ' : ' + lpad(bash.crits.strikes,6,' ') + '</span>\\n'\n  d += p + '<span class=\"normal\">' + rpad('Crit Rate', 34, ' ') + ' : ' + lpad(totalCrits,6,' ')\n  d += '   ' + lpad(cr,5) + '%</span>\\n'\n  d += p + '<span class=\"mute\">' + rpad('', 62, '=') + '</span>\\n'\n  \n  for (var k = list.length - 1; k > -1; k--) {\n    var tier = list[k].tier\n    var count = list[k].count\n    var effective = list[k].effective\n    \n    d += p + '<span class=\"normal\">  ' + rpad(tier, 32, ' ') + ' : ' + lpad(count,6,' ')\n    d += '   ' + lpad((count / bash.crits.strikes * 100).toFixed(1), 5, ' ') + '%'\n    d += '   ' + lpad((effective / totalEffective * 100).toFixed(1), 5, ' ') + '%'\n    d += '</span>\\n'\n  }\n  \n  d += p + '<span class=\"mute\">' + rpad('', 62, '=') + '</span>\\n'\n  d += p + '<span class=\"mute\">' + rpad('', 62, ' ') + '</span>\\n'\n  \n  Core.printdown(d)\n}"
           },
           {
-            "name": "bash.crits",
-            "type": "alias",
-            "id": "QO-fkuiyw",
-            "patterns": [
-              "^crits$"
-            ],
-            "output": "bash.critDisplay()"
-          },
-          {
-            "name": "Criticals",
-            "type": "trigger",
-            "id": "QO-n53y5h",
-            "patterns": [
-              "^You have scored a (CRITICAL) hit!$",
-              "^You have scored a (CRUSHING CRITICAL) hit!$",
-              "^You have scored an (OBLITERATING CRITICAL) hit!$",
-              "^You have scored an (ANNIHILATINGLY POWERFUL CRITICAL) hit!$",
-              "^You have scored a (WORLD-SHATTERING CRITICAL) hit!!!$"
-            ],
-            "output": "sub(matches[0],'<span class=\"turquoise\">' + matches[0] + '</span>')\n\nbash.aggregator.criticalAccrete(matches[1])\n\n/*\nlet tier = matches[1]\nbash.crits[tier]  = bash.crits[tier] || 0\nbash.crits[tier] += 1\n\nbash.critSave()*/"
-          },
-          {
-            "name": "strike+, Shaman",
-            "type": "trigger",
-            "id": "QO-8gjoq0",
-            "patterns": [
-              "^You point an imperious finger at (.+?) and blood begins to flow from (?:his|her) pores\\.$",
-              "^Blood continues to spurt out of (.+?)\\'s eyes, ears, nose, and mouth\\.$",
-              "^You point an imperious finger at (.+?)\\. (?:His|Her) flesh blackens and sloughs off\\.$"
-            ],
-            "output": "bash.aggregator.criticalCount()\n\n/*\nbash.crits.strikes += 1\n\nbash.critSave()*/"
-          },
-          {
-            "name": "strike+, Dragon",
-            "type": "trigger",
-            "id": "QO-iy2o9s",
-            "patterns": [
-              "^You rip into (.+?) with your massive, deadly claws\\.$",
-              "^You charge quickly at (.+?), throwing your mighty form into (?:him|her) and sending (?:him|her) staggering back\\.$",
-              "^You puff small bolts of lightning at (.+?), enraging (?:him|her) and causing (?:him|her) to attack recklessly\\.$",
-              "^You breathe at (.+?), small bolts of lightning crackling around (?:him|her) and sensitizing (?:his|her) skin\\.$",
-              "^You open your cavernous maw and summon a blast of lightning to pulverize (.+?)\\.$"
-            ],
-            "output": "bash.aggregator.criticalCount()\n\n/*\nbash.crits.strikes += 1\n\nbash.critSave()*/\n\n// STORMFLARE Missing\n// You breathe a series of lightning strikes in a lattice around a stout footsoldier, but he is able to quickly dart through the lattice and avoid the bulk of the lightning strikes."
+            "name": "Critical Triggers",
+            "type": "folder",
+            "id": "QO-rfg6wg",
+            "desc": "",
+            "is_open": false,
+            "children": [
+              {
+                "name": "Criticals",
+                "type": "trigger",
+                "id": "QO-n53y5h",
+                "patterns": [
+                  "^You have scored a (CRITICAL) hit!$",
+                  "^You have scored a (CRUSHING CRITICAL) hit!$",
+                  "^You have scored an (OBLITERATING CRITICAL) hit!$",
+                  "^You have scored an (ANNIHILATINGLY POWERFUL CRITICAL) hit!$",
+                  "^You have scored a (WORLD-SHATTERING CRITICAL) hit!!!$"
+                ],
+                "output": "bash.aggregator.criticalAccrete(matches[1])\n\nsub(matches[0],'<span class=\"turquoise\">' + matches[0] + '</span>')"
+              },
+              {
+                "name": "strike+, Shaman",
+                "type": "trigger",
+                "id": "QO-8gjoq0",
+                "patterns": [
+                  "^You point an imperious finger at (.+?) and blood begins to flow from (?:his|her) pores\\.$",
+                  "^Blood continues to spurt out of (.+?)\\'s eyes, ears, nose, and mouth\\.$",
+                  "^You point an imperious finger at (.+?)\\. (?:His|Her) flesh blackens and sloughs off\\.$"
+                ],
+                "output": "bash.aggregator.criticalCount()"
+              },
+              {
+                "name": "strike+, Dragon",
+                "type": "trigger",
+                "id": "QO-iy2o9s",
+                "patterns": [
+                  "^You rip into (.+?) with your massive, deadly claws\\.$",
+                  "^You charge quickly at (.+?), throwing your mighty form into (?:him|her) and sending (?:him|her) staggering back\\.$",
+                  "^You puff small bolts of lightning at (.+?), enraging (?:him|her) and causing (?:him|her) to attack recklessly\\.$",
+                  "^You breathe at (.+?), small bolts of lightning crackling around (?:him|her) and sensitizing (?:his|her) skin\\.$",
+                  "^You open your cavernous maw and summon a blast of lightning to pulverize (.+?)\\.$"
+                ],
+                "output": "bash.aggregator.criticalCount()\n\n// STORMFLARE Missing\n// You breathe a series of lightning strikes in a lattice around a stout footsoldier, but he is able to quickly dart through the lattice and avoid the bulk of the lightning strikes."
+              }
+            ]
           }
         ]
       },
