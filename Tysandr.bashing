@@ -95,28 +95,28 @@
     "gold": 128
   },
   "a shambling zombie": {
-    "kills": 18,
-    "gold": 2012
+    "kills": 27,
+    "gold": 2980
   },
   "an accursed skeleton": {
-    "kills": 32,
-    "gold": 11433
+    "kills": 33,
+    "gold": 11751
   },
   "a cursed phantasm": {
-    "kills": 7,
-    "gold": 1312
+    "kills": 12,
+    "gold": 2286
   },
   "a decaying lich": {
-    "kills": 7,
-    "gold": 1507
+    "kills": 11,
+    "gold": 2674
   },
   "Ulgase, the lich crone": {
     "kills": 1,
     "gold": 286
   },
   "Malvoc, the Unholy": {
-    "kills": 1,
-    "gold": 359
+    "kills": 2,
+    "gold": 949
   },
   "a flesh-eating slug": {
     "kills": 22,
