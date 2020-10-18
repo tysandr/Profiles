@@ -1073,7 +1073,7 @@
             "type": "folder",
             "id": "QO-vjoae9",
             "desc": "",
-            "is_open": false,
+            "is_open": true,
             "children": [
               {
                 "name": "gold drop+",
@@ -1105,7 +1105,7 @@
                   "^You pick up (\\d+) gold sovereigns\\.$",
                   "^You scoop up (\\d+) gold sovereigns\\.$"
                 ],
-                "output": "bash.aggregator.gold(matches[1])"
+                "output": "bash.aggregator.gold(matches[1])\n\nsub(matches[1], '<span class=\"yellow\">' + matches[1] + '</span>')"
               }
             ]
           },
@@ -1114,7 +1114,7 @@
             "type": "folder",
             "id": "QO-7vhc74",
             "desc": "",
-            "is_open": false,
+            "is_open": true,
             "children": [
               {
                 "name": "talisman+",
@@ -1124,6 +1124,15 @@
                   "^You have found (.+?) talisman piece\\!$"
                 ],
                 "output": "sub(matches[0], '<span class=\"violent\">' + matches[0] + '</span>')"
+              },
+              {
+                "name": "health remaining",
+                "type": "trigger",
+                "id": "QO-e14k2x",
+                "patterns": [
+                  "^(He|She) has (\\d+)\\% health remaining\\.$"
+                ],
+                "output": "let r = parseInt(matches[2])\nlet c = 'seagreen'\nif (r < 20) {\n  c = 'hotred'\n} else if (r < 45) {\n  c = 'yellow'\n}\n\nsub(matches[0], '<span class=\"mute\">' + matches[0] + '</span>')\nsub(matches[2], '<span class=\"' + c + '\">' + matches[2] + '</span>')"
               }
             ]
           },
@@ -1293,14 +1302,14 @@
     "type": "folder",
     "id": "QO-dpp42p",
     "desc": "",
-    "is_open": false,
+    "is_open": true,
     "children": [
       {
         "name": "Chat Window",
         "type": "folder",
         "id": "QO-mrm5yv",
         "desc": "",
-        "is_open": true,
+        "is_open": false,
         "children": [
           {
             "name": "chat, initial",
@@ -1360,7 +1369,7 @@
         "type": "folder",
         "id": "QO-hgto0p",
         "desc": "",
-        "is_open": false,
+        "is_open": true,
         "children": [
           {
             "name": "ambient, gold+",
@@ -1370,7 +1379,7 @@
               "^You pick up (\\d+) gold sovereigns\\.$",
               "^You scoop up (\\d+) gold sovereigns\\.$"
             ],
-            "output": "sub(matches[1], '<span class=\"yellow\">' + matches[1] + '</span>')\n$('body').trigger('ambient','gold')"
+            "output": "$('body').trigger('ambient','gold')"
           },
           {
             "name": "ambient, paragon+",
@@ -1614,7 +1623,7 @@
         "type": "folder",
         "id": "QO-qwdjas",
         "desc": "",
-        "is_open": true,
+        "is_open": false,
         "children": [
           {
             "name": "prospecting",
