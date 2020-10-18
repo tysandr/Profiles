@@ -87,8 +87,7 @@
         "type": "folder",
         "id": "QO-jlabyg",
         "desc": "",
-        "is_open": false,
-        "output": "/*\n  Need to implement a hierarchy tree some where in here.\n */",
+        "is_open": true,
         "children": [
           {
             "name": "svw, subviews",
@@ -897,7 +896,7 @@
     "type": "folder",
     "id": "QO-48xl1h",
     "desc": "",
-    "is_open": false,
+    "is_open": true,
     "children": [
       {
         "name": "bashing",
@@ -972,6 +971,15 @@
         "id": "QO-wuqa7x",
         "patterns": [
           "^You have recovered equilibrium\\.$"
+        ],
+        "output": "if (bash.state === 1) {\n  bash.attack()\n}"
+      },
+      {
+        "name": "stand+",
+        "type": "trigger",
+        "id": "QO-jwrz7b",
+        "patterns": [
+          "^You stand up\\.$"
         ],
         "output": "if (bash.state === 1) {\n  bash.attack()\n}"
       },
@@ -1256,7 +1264,7 @@
         "type": "folder",
         "id": "QO-mrm5yv",
         "desc": "",
-        "is_open": false,
+        "is_open": true,
         "children": [
           {
             "name": "chat, initial",
@@ -1570,7 +1578,7 @@
         "type": "folder",
         "id": "QO-qwdjas",
         "desc": "",
-        "is_open": false,
+        "is_open": true,
         "children": [
           {
             "name": "prospecting",
