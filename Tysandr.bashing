@@ -32,9 +32,9 @@
         "value": 178
       },
       "a mhun knight": {
-        "kills": 40,
-        "gold": 11641,
-        "value": 40
+        "kills": 41,
+        "gold": 11924,
+        "value": 41
       },
       "Sir Mertyn, Grand Champion of Moghedu": {
         "kills": 4,
@@ -123,10 +123,10 @@
     }
   },
   "crits": {
-    "strikes": 283,
-    "CRUSHING CRITICAL": 29,
+    "strikes": 300,
+    "CRUSHING CRITICAL": 31,
     "OBLITERATING CRITICAL": 16,
-    "CRITICAL": 47,
+    "CRITICAL": 52,
     "WORLD-SHATTERING CRITICAL": 1,
     "ANNIHILATINGLY POWERFUL CRITICAL": 3
   }
