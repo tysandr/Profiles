@@ -991,7 +991,7 @@
         "output": "if (bash.state === 1) {\n  bash.attack()\n}"
       },
       {
-        "name": "stand+",
+        "name": "attempt+",
         "type": "trigger",
         "id": "QO-jwrz7b",
         "patterns": [
