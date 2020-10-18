@@ -120,14 +120,50 @@
         "gold": 128,
         "value": 128
       }
+    },
+    "the Azdun Catacombs": {
+      "a shambling zombie": {
+        "kills": 5,
+        "gold": 642,
+        "value": 5
+      },
+      "a cursed phantasm": {
+        "kills": 2,
+        "gold": 371,
+        "value": 2
+      },
+      "an accursed skeleton": {
+        "kills": 6,
+        "gold": 1929,
+        "value": 385
+      },
+      "a vicious ghast": {
+        "kills": 9,
+        "gold": 1653,
+        "value": 183
+      },
+      "a flesh-eating slug": {
+        "kills": 1,
+        "gold": 262,
+        "value": 262
+      },
+      "unidentified mob": {
+        "gold": 320,
+        "value": 320
+      },
+      "Underlord Seroth": {
+        "kills": 1,
+        "gold": 2009,
+        "value": 2009
+      }
     }
   },
   "crits": {
-    "strikes": 300,
-    "CRUSHING CRITICAL": 31,
-    "OBLITERATING CRITICAL": 16,
-    "CRITICAL": 52,
-    "WORLD-SHATTERING CRITICAL": 1,
-    "ANNIHILATINGLY POWERFUL CRITICAL": 3
+    "strikes": 596,
+    "CRUSHING CRITICAL": 56,
+    "OBLITERATING CRITICAL": 30,
+    "CRITICAL": 108,
+    "WORLD-SHATTERING CRITICAL": 3,
+    "ANNIHILATINGLY POWERFUL CRITICAL": 8
   }
 }
