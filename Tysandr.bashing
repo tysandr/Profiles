@@ -2,9 +2,9 @@
   "datum": {
     "Moghedu": {
       "a mhun guard": {
-        "kills": 97,
-        "gold": 12752,
-        "value": 95
+        "kills": 100,
+        "gold": 13116,
+        "value": 131
       },
       "a master mhun miner": {
         "kills": 28,
@@ -17,9 +17,9 @@
         "value": 128
       },
       "an elite mhun keeper": {
-        "kills": 41,
-        "gold": 21595,
-        "value": 526
+        "kills": 42,
+        "gold": 22135,
+        "value": 527
       },
       "a mhun miner": {
         "kills": 92,
@@ -32,19 +32,19 @@
         "value": 178
       },
       "a mhun knight": {
-        "kills": 41,
-        "gold": 11924,
-        "value": 41
+        "kills": 47,
+        "gold": 13421,
+        "value": 285
       },
       "Sir Mertyn, Grand Champion of Moghedu": {
-        "kills": 4,
-        "gold": 663,
+        "kills": 5,
+        "gold": 828,
         "value": 165
       },
       "a mhun archer": {
-        "kills": 33,
-        "gold": 5511,
-        "value": 33
+        "kills": 36,
+        "gold": 6010,
+        "value": 166
       },
       "a mhun bodyguard": {
         "kills": 9,
@@ -57,9 +57,9 @@
         "value": 43
       },
       "an adolescent mhun": {
-        "kills": 11,
-        "gold": 322,
-        "value": 11
+        "kills": 13,
+        "gold": 363,
+        "value": 30
       },
       "a mhun demolitionist": {
         "kills": 25,
@@ -119,6 +119,11 @@
         "kills": 1,
         "gold": 128,
         "value": 128
+      },
+      "unidentified mob": {
+        "gold": 233,
+        "value": 233,
+        "kills": 1
       }
     },
     "the Azdun Catacombs": {
@@ -165,11 +170,6 @@
     }
   },
   "crits": {
-    "strikes": 968,
-    "CRUSHING CRITICAL": 87,
-    "OBLITERATING CRITICAL": 39,
-    "CRITICAL": 194,
-    "WORLD-SHATTERING CRITICAL": 6,
-    "ANNIHILATINGLY POWERFUL CRITICAL": 17
+    "strikes": 1
   }
 }
