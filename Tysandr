@@ -940,7 +940,7 @@
             "name": "bashing.areas",
             "type": "script",
             "id": "QO-2o6yi0",
-            "output": "bash.directory = {}\n\nbash.directory['Azdun Catacombs'] = {\n  key: 'azduncatacombs',\n  validTargets: [\n    'a cursed phantasm',\n    'a shambling zombie',\n  ],\n}\n\nbash.dictionary = {}\n\nbash.dictionary['azduncatacombs::a cursed phantasm'] = {\n  threat: 4,\n  value : 2,\n}\nbash.dictionary['azduncatacombs::a shambling zombie'] = {\n  threat: 3,\n  value : 2,\n}\nbash.dictionary['azduncatacombs::a decaying lich'] = {\n  threat: 5,\n  value : 3,\n}\nbash.dictionary['azduncatacombs::Malvoc, the Unholy'] = {\n  threat: 3,\n  value : 4,\n}\nbash.dictionary['azduncatacombs::Ulgase, the lich crone'] = {\n  threat: 3,\n  value : 3,\n}"
+            "output": "bash.directory = {}\n\nbash.directory['Azdun Catacombs'] = {\n  key: 'azduncatacombs',\n  validTargets: [\n    'a cursed phantasm',\n    'a shambling zombie',\n  ],\n}\n\nbash.dictionary = {}\n\nbash.dictionary['azduncatacombs::a cursed phantasm'] = {\n  threat: 4,\n  value : 2,\n}\nbash.dictionary['azduncatacombs::a shambling zombie'] = {\n  threat: 3,\n  value : 2,\n}\nbash.dictionary['azduncatacombs::a decaying lich'] = {\n  threat: 5,\n  value : 3,\n}\nbash.dictionary['azduncatacombs::Malvoc, the Unholy'] = {\n  threat: 3,\n  value : 4,\n}\nbash.dictionary['azduncatacombs::Ulgase, the lich crone'] = {\n  threat: 3,\n  value : 3,\n}\nbash.dictionary['azduncatacombs::an accursed skeleton'] = {\n  threat: 4,\n  value : 4,\n}"
           }
         ]
       },
