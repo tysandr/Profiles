@@ -1,205 +1,125 @@
 {
   "datum": {
-    "a master mhun miner": {
-      "kills": 28,
-      "gold": 5733,
-      "value": 204
-    },
-    "a mhun labourer": {
-      "kills": 43,
-      "gold": 5527,
-      "value": 128
-    },
-    "a mhun guard": {
-      "kills": 95,
-      "gold": 12752,
-      "value": 95
-    },
-    "an elite mhun keeper": {
-      "kills": 41,
-      "gold": 21595,
-      "value": 526
-    },
-    "a mhun miner": {
-      "kills": 92,
-      "gold": 13585,
-      "value": 147
-    },
-    "Guard Captain Haedra": {
-      "kills": 1,
-      "gold": 178,
-      "value": 178
-    },
-    "a mhun knight": {
-      "kills": 40,
-      "gold": 11641,
-      "value": 40
-    },
-    "Sir Mertyn, Grand Champion of Moghedu": {
-      "kills": 4,
-      "gold": 663,
-      "value": 165
-    },
-    "a mhun archer": {
-      "kills": 33,
-      "gold": 5511,
-      "value": 33
-    },
-    "a mhun bodyguard": {
-      "kills": 9,
-      "gold": 2508,
-      "value": 278
-    },
-    "a mhun conjuror": {
-      "kills": 42,
-      "gold": 8556,
-      "value": 42
-    },
-    "an adolescent mhun": {
-      "kills": 11,
-      "gold": 322,
-      "value": 11
-    },
-    "a mhun demolitionist": {
-      "kills": 25,
-      "gold": 2984,
-      "value": 119
-    },
-    "a master mhun demolitionist": {
-      "kills": 3,
-      "gold": 325,
-      "value": 108
-    },
-    "Mhunk, an inattentive mhun miner": {
-      "kills": 4,
-      "gold": 371,
-      "value": 92
-    },
-    "Guard Captain Chelak": {
-      "kills": 2,
-      "gold": 426,
-      "value": 213
-    },
-    "Master Tarrin": {
-      "kills": 5,
-      "gold": 522,
-      "value": 5
-    },
-    "Guard Captain Darion": {
-      "kills": 1,
-      "gold": 183,
-      "value": 183
-    },
-    "Master Scout Madira": {
-      "kills": 1,
-      "gold": 832,
-      "value": 832
-    },
-    "a mhun merchant": {
-      "kills": 1,
-      "value": null
-    },
-    "Alaran, the Master Trader": {
-      "kills": 1,
-      "gold": 70,
-      "value": 70
-    },
-    "a humble cleric": {
-      "kills": 1,
-      "gold": 123,
-      "value": 123
-    },
-    "Sir Temelin, Knight Commander of Moghedu": {
-      "kills": 1,
-      "gold": 1114,
-      "value": 1114
-    },
-    "Gishuan, the blacksmith": {
-      "kills": 1,
-      "gold": 128,
-      "value": 128
-    },
-    "a shambling zombie": {
-      "kills": 27,
-      "gold": 2980,
-      "value": 110
-    },
-    "an accursed skeleton": {
-      "kills": 33,
-      "gold": 11751,
-      "value": 356
-    },
-    "a cursed phantasm": {
-      "kills": 12,
-      "gold": 2286,
-      "value": 190
-    },
-    "a decaying lich": {
-      "kills": 11,
-      "gold": 2674,
-      "value": 243
-    },
-    "Ulgase, the lich crone": {
-      "kills": 1,
-      "gold": 286,
-      "value": 286
-    },
-    "Malvoc, the Unholy": {
-      "kills": 2,
-      "gold": 949,
-      "value": 474
-    },
-    "a flesh-eating slug": {
-      "kills": 22,
-      "gold": 6321,
-      "value": 287
-    },
-    "a vicious ghast": {
-      "kills": 10,
-      "gold": 1335,
-      "value": 133
-    },
-    "Underlord Seroth": {
-      "kills": 1,
-      "gold": 3032,
-      "value": 3032
-    },
-    "an unravelling mummy": {
-      "kills": 10,
-      "gold": 5419,
-      "value": 541
-    },
-    "Rhuzios, the Mummy Lord": {
-      "kills": 1,
-      "gold": 2095,
-      "value": 2095
-    },
-    "an undead knight": {
-      "kills": 10,
-      "gold": 11060,
-      "value": 1106
-    },
-    "Underlord Dreyvos": {
-      "kills": 1,
-      "gold": 3139,
-      "value": 3139
-    },
     "Moghedu": {
       "a mhun guard": {
-        "kills": 2
+        "kills": 97,
+        "gold": 12752,
+        "value": 95
+      },
+      "a master mhun miner": {
+        "kills": 28,
+        "gold": 5733,
+        "value": 204
+      },
+      "a mhun labourer": {
+        "kills": 43,
+        "gold": 5527,
+        "value": 128
+      },
+      "an elite mhun keeper": {
+        "kills": 41,
+        "gold": 21595,
+        "value": 526
+      },
+      "a mhun miner": {
+        "kills": 92,
+        "gold": 13585,
+        "value": 147
+      },
+      "Guard Captain Haedra": {
+        "kills": 1,
+        "gold": 178,
+        "value": 178
+      },
+      "a mhun knight": {
+        "kills": 40,
+        "gold": 11641,
+        "value": 40
+      },
+      "Sir Mertyn, Grand Champion of Moghedu": {
+        "kills": 4,
+        "gold": 663,
+        "value": 165
       },
       "a mhun archer": {
-        "kills": 2
+        "kills": 33,
+        "gold": 5511,
+        "value": 33
       },
-      "unidentified mob": {
-        "gold": 167,
-        "value": 0
+      "a mhun bodyguard": {
+        "kills": 9,
+        "gold": 2508,
+        "value": 278
       },
       "a mhun conjuror": {
+        "kills": 42,
+        "gold": 8556,
+        "value": 42
+      },
+      "an adolescent mhun": {
+        "kills": 11,
+        "gold": 322,
+        "value": 11
+      },
+      "a mhun demolitionist": {
+        "kills": 25,
+        "gold": 2984,
+        "value": 119
+      },
+      "a master mhun demolitionist": {
+        "kills": 3,
+        "gold": 325,
+        "value": 108
+      },
+      "Mhunk, an inattentive mhun miner": {
+        "kills": 4,
+        "gold": 371,
+        "value": 92
+      },
+      "Guard Captain Chelak": {
         "kills": 2,
-        "gold": 244,
-        "value": 1
-      }
+        "gold": 426,
+        "value": 213
+      },
+      "Master Tarrin": {
+        "kills": 5,
+        "gold": 522,
+        "value": 5
+      },
+      "Guard Captain Darion": {
+        "kills": 1,
+        "gold": 183,
+        "value": 183
+      },
+      "Master Scout Madira": {
+        "kills": 1,
+        "gold": 832,
+        "value": 832
+      },
+      "a mhun merchant": {
+        "kills": 1,
+        "value": null
+      },
+      "Alaran, the Master Trader": {
+        "kills": 1,
+        "gold": 70,
+        "value": 70
+      },
+      "a humble cleric": {
+        "kills": 1,
+        "gold": 123,
+        "value": 123
+      },
+      "Sir Temelin, Knight Commander of Moghedu": {
+        "kills": 1,
+        "gold": 1114,
+        "value": 1114
+      },
+      "Gishuan, the blacksmith": {
+        "kills": 1,
+        "gold": 128,
+        "value": 128
+      },
     }
   },
   "crits": {
