@@ -963,7 +963,7 @@
         "patterns": [
           "^crits$"
         ],
-        "output": "bash.critDisplay()"
+        "output": "bash.aggregator.critDisplay()\n\n// bash.critDisplay()"
       },
       {
         "name": "bash (.+?)",
