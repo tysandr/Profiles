@@ -87,7 +87,8 @@
         "type": "folder",
         "id": "QO-jlabyg",
         "desc": "",
-        "is_open": true,
+        "is_open": false,
+        "output": "/*\n  Need to implement a hierarchy tree some where in here.\n */",
         "children": [
           {
             "name": "svw, subviews",
@@ -1255,7 +1256,7 @@
         "type": "folder",
         "id": "QO-mrm5yv",
         "desc": "",
-        "is_open": true,
+        "is_open": false,
         "children": [
           {
             "name": "chat, initial",
@@ -1569,7 +1570,7 @@
         "type": "folder",
         "id": "QO-qwdjas",
         "desc": "",
-        "is_open": true,
+        "is_open": false,
         "children": [
           {
             "name": "prospecting",
@@ -1710,7 +1711,7 @@
     "type": "folder",
     "id": "QO-x7jpwi",
     "desc": "",
-    "is_open": true,
+    "is_open": false,
     "children": [
       {
         "name": "youtube API",
