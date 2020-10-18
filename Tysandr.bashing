@@ -143,9 +143,9 @@
         "value": 185
       },
       "a flesh-eating slug": {
-        "kills": 6,
-        "gold": 1332,
-        "value": 222
+        "kills": 7,
+        "gold": 1614,
+        "value": 230
       },
       "unidentified mob": {
         "gold": 586,
@@ -169,11 +169,11 @@
     }
   },
   "crits": {
-    "strikes": 831,
+    "strikes": 835,
     "CRUSHING CRITICAL": 75,
     "OBLITERATING CRITICAL": 34,
-    "CRITICAL": 159,
-    "WORLD-SHATTERING CRITICAL": 4,
+    "CRITICAL": 162,
+    "WORLD-SHATTERING CRITICAL": 5,
     "ANNIHILATINGLY POWERFUL CRITICAL": 13
   }
 }
