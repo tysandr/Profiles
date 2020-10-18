@@ -1,55 +1,55 @@
 {
   "a master mhun miner": {
-    "kills": 27,
-    "gold": 5567
+    "kills": 28,
+    "gold": 5733
   },
   "a mhun labourer": {
-    "kills": 38,
-    "gold": 4847
+    "kills": 43,
+    "gold": 5527
   },
   "a mhun guard": {
-    "kills": 67,
-    "gold": 9190
+    "kills": 85,
+    "gold": 11319
   },
   "an elite mhun keeper": {
-    "kills": 36,
-    "gold": 19297
+    "kills": 41,
+    "gold": 21595
   },
   "a mhun miner": {
-    "kills": 85,
-    "gold": 12577
+    "kills": 92,
+    "gold": 13585
   },
   "Guard Captain Haedra": {
     "kills": 1,
     "gold": 178
   },
   "a mhun knight": {
-    "kills": 27,
-    "gold": 8295
+    "kills": 39,
+    "gold": 11354
   },
   "Sir Mertyn, Grand Champion of Moghedu": {
-    "kills": 3,
-    "gold": 513
+    "kills": 4,
+    "gold": 663
   },
   "a mhun archer": {
-    "kills": 23,
-    "gold": 3852
+    "kills": 27,
+    "gold": 4596
   },
   "a mhun bodyguard": {
-    "kills": 5,
-    "gold": 1255
+    "kills": 9,
+    "gold": 2508
   },
   "a mhun conjuror": {
-    "kills": 29,
-    "gold": 5965
+    "kills": 39,
+    "gold": 7813
   },
   "an adolescent mhun": {
-    "kills": 6,
-    "gold": 99
+    "kills": 9,
+    "gold": 157
   },
   "a mhun demolitionist": {
-    "kills": 22,
-    "gold": 2672
+    "kills": 25,
+    "gold": 2984
   },
   "a master mhun demolitionist": {
     "kills": 3,
@@ -60,12 +60,12 @@
     "gold": 371
   },
   "Guard Captain Chelak": {
-    "kills": 1,
-    "gold": 197
+    "kills": 2,
+    "gold": 426
   },
   "Master Tarrin": {
-    "kills": 3,
-    "gold": 335
+    "kills": 4,
+    "gold": 429
   },
   "Guard Captain Darion": {
     "kills": 1,
@@ -74,5 +74,76 @@
   "Master Scout Madira": {
     "kills": 1,
     "gold": 832
+  },
+  "a mhun merchant": {
+    "kills": 1
+  },
+  "Alaran, the Master Trader": {
+    "kills": 1,
+    "gold": 70
+  },
+  "a humble cleric": {
+    "kills": 1,
+    "gold": 123
+  },
+  "Sir Temelin, Knight Commander of Moghedu": {
+    "kills": 1,
+    "gold": 1114
+  },
+  "Gishuan, the blacksmith": {
+    "kills": 1,
+    "gold": 128
+  },
+  "a shambling zombie": {
+    "kills": 18,
+    "gold": 2012
+  },
+  "an accursed skeleton": {
+    "kills": 25,
+    "gold": 8742
+  },
+  "a cursed phantasm": {
+    "kills": 7,
+    "gold": 1312
+  },
+  "a decaying lich": {
+    "kills": 7,
+    "gold": 1507
+  },
+  "Ulgase, the lich crone": {
+    "kills": 1,
+    "gold": 286
+  },
+  "Malvoc, the Unholy": {
+    "kills": 1,
+    "gold": 359
+  },
+  "a flesh-eating slug": {
+    "kills": 18,
+    "gold": 5165
+  },
+  "a vicious ghast": {
+    "kills": 9,
+    "gold": 1151
+  },
+  "Underlord Seroth": {
+    "kills": 1,
+    "gold": 3032
+  },
+  "an unravelling mummy": {
+    "kills": 10,
+    "gold": 5419
+  },
+  "Rhuzios, the Mummy Lord": {
+    "kills": 1,
+    "gold": 2095
+  },
+  "an undead knight": {
+    "kills": 10,
+    "gold": 11060
+  },
+  "Underlord Dreyvos": {
+    "kills": 1,
+    "gold": 3139
   }
 }
