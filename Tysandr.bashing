@@ -52,9 +52,9 @@
         "value": 278
       },
       "a mhun conjuror": {
-        "kills": 42,
-        "gold": 8556,
-        "value": 42
+        "kills": 43,
+        "gold": 8736,
+        "value": 43
       },
       "an adolescent mhun": {
         "kills": 11,
@@ -77,9 +77,9 @@
         "value": 92
       },
       "Guard Captain Chelak": {
-        "kills": 2,
-        "gold": 426,
-        "value": 213
+        "kills": 3,
+        "gold": 638,
+        "value": 3
       },
       "Master Tarrin": {
         "kills": 5,
@@ -123,10 +123,10 @@
     }
   },
   "crits": {
-    "strikes": 240,
-    "CRUSHING CRITICAL": 24,
-    "OBLITERATING CRITICAL": 15,
-    "CRITICAL": 40,
+    "strikes": 283,
+    "CRUSHING CRITICAL": 29,
+    "OBLITERATING CRITICAL": 16,
+    "CRITICAL": 47,
     "WORLD-SHATTERING CRITICAL": 1,
     "ANNIHILATINGLY POWERFUL CRITICAL": 3
   }
