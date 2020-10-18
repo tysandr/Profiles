@@ -19,7 +19,7 @@
     "type": "folder",
     "id": "QO-5rr6sk",
     "desc": "",
-    "is_open": true,
+    "is_open": false,
     "output": "/*\n > Self/System\n   >> References the system and performs meta tasks\n   >> Handles initial GMCP routing\n   >> Includes:\n       [ ] performance manager\n       [ ] remote data manager\n       [ ] debugging\n       [ ] timing\n       [-] window manager\n       [ ] logging protocol\n       [x] trigger manager\n       [ ] keybinds\n       [ ] color manager\n       \n */",
     "children": [
       {
@@ -66,7 +66,7 @@
         "type": "folder",
         "id": "QO-47ql8y",
         "desc": "",
-        "is_open": true,
+        "is_open": false,
         "children": [
           {
             "name": "meta.local",
@@ -87,7 +87,7 @@
         "type": "folder",
         "id": "QO-jlabyg",
         "desc": "",
-        "is_open": true,
+        "is_open": false,
         "children": [
           {
             "name": "svw, subviews",
@@ -940,7 +940,7 @@
         "id": "QO-si16dx",
         "desc": "",
         "output": "/*\n  \n */",
-        "is_open": true,
+        "is_open": false,
         "children": [
           {
             "name": "bashing.areas",
@@ -1073,7 +1073,7 @@
             "type": "folder",
             "id": "QO-vjoae9",
             "desc": "",
-            "is_open": true,
+            "is_open": false,
             "children": [
               {
                 "name": "gold drop+",
@@ -1130,9 +1130,9 @@
                 "type": "trigger",
                 "id": "QO-e14k2x",
                 "patterns": [
-                  "^(He|She) has (\\d+)\\% health remaining\\.$"
+                  "^(?:He|She) has (\\d+)\\% health remaining\\.$"
                 ],
-                "output": "let r = parseInt(matches[2])\nlet c = 'green'\nif (r < 20) {\n  c = 'hotred'\n} else if (r < 45) {\n  c = 'yellow'\n}\n\nsub(matches[0], '<span class=\"normal\">' + matches[0] + '</span>')\nsub(matches[2], '<span class=\"' + c + '\">' + matches[2] + ' </span>')"
+                "output": "let r = parseInt(matches[2])\nlet c = 'green'\nif (r < 20) {\n  c = 'hotred'\n} else if (r < 45) {\n  c = 'yellow'\n}\n\nsub(matches[2], '<span class=\"' + c + '\">' + matches[2] + ' </span>')"
               }
             ]
           },
@@ -1302,7 +1302,7 @@
     "type": "folder",
     "id": "QO-dpp42p",
     "desc": "",
-    "is_open": true,
+    "is_open": false,
     "children": [
       {
         "name": "Chat Window",
