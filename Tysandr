@@ -926,7 +926,13 @@
         "name": "bash.aggregator",
         "type": "script",
         "id": "QO-ix096l",
-        "output": "// save intra-edit sessional data\nif (typeof bash != 'undefined' &&\n    typeof bash.aggregator != 'undefined' && \n    typeof bash.aggregator.sessional == 'function') {\n\n  var sesh = bash.aggregator.sessional()\n      sesh = JSON.stringify(sesh)\n  localStorage.setItem('bash-sessional',sesh)\n}\n\n\n//start\nbash = typeof bash != 'undefined' ? bash : {}\n\nbash.aggregator = (function(){\n  let read  = meta.local.read\n  let write = meta.local.write\n  \n  let db = {}\n  let sessionData = {}\n  let key = 'bash-data'\n  let lastMob = ''\n  let autosave = true\n  let sessional = true\n  \n  // load up sessional\n  let n = localStorage.getItem('bash-sessional')\n  if (n) {\n    sessionData = JSON.parse(n)\n  }\n  \n  let load = function() {\n    db = read(key)\n    if (!db) {\n      db = {}\n      write(key,db)\n    }\n  }\n  \n  let save = function() {\n    write(key,db)\n  }\n  \n  let accrete = function(mob) {\n    if (typeof db[mob] == 'undefined') { db[mob] = {} }\n    db[mob].kills = db[mob].kills || 0\n    db[mob].kills += 1\n    \n    lastMob = mob\n    \n    if (autosave) { save() }\n    \n    // Sessional\n    if (sessional && sessionData) {\n      let area = 'unassignedArea'\n      if (player && typeof player.area == 'string') {\n        area = player.area\n      }\n      sessionData.kills[area] = sessionData.kills[area] || {}\n      sessionData.kills[area][mob] = sessionData.kills[area][mob] || {}\n      sessionData.kills[area][mob].kills = sessionData.kills[area][mob].kills || 0\n      sessionData.kills[area][mob].kills += 1\n      \n      sessionData.tally += 1\n    }\n    _display()\n  }\n  \n  let gold = function(g) {\n    let v = parseInt(g)\n    if (lastMob !== '' && typeof db[lastMob] != 'undefined') {\n      db[lastMob].gold = db[lastMob].gold || 0\n      db[lastMob].gold += v\n      db[lastMob].value = Math.floor(db[lastMob].gold / db[lastMob].kills ? db[lastMob].kills : 0)\n    }\n    if (autosave) { save() }\n    if (sessional && sessionData) {\n      let area = 'unassignedArea'\n      if (player && typeof player.area == 'string') {\n        area = player.area\n      }\n      sessionData.kills[area] = sessionData.kills[area] || {}\n      sessionData.kills[area][lastMob] = sessionData.kills[area][lastMob] || {}\n      sessionData.kills[area][lastMob].gold = sessionData.kills[area][lastMob].gold || 0\n      sessionData.kills[area][lastMob].gold += v\n      \n      sessionData.gold = sessionData.gold || 0\n      sessionData.gold += v\n    }\n    _display()\n  }\n  \n  let createSession = function() {\n    sessionData = {}\n    \n    // Timing metrics\n    sessionData.start = new Date().getTime()\n    \n    // Kill metrics\n    sessionData.kills = {}\n    sessionData.kills.unassignedArea = {}\n    \n    sessionData.tally = 0\n    sessionData.gold  = 0\n  }\n  let sessionLength = function() {\n    let stop = sessionData.end || new Date().getTime()\n    return (stop - sessionData.start) / 1000\n  }\n  let sessionStop = function() {\n    sessionData.end = new Date().getTime()\n    return (sessionData.end - sessionData.start) / 1000\n  }\n  if (!sessionData.kills) { createSession() }\n  \n  let _metrics = function() {\n    let c = 0\n    let g = 0\n    let k = db\n    for (var mobName in k) {\n      let mob = k[mobName]\n      c += mob.kills\n      g += mob.gold || 0\n    }\n    return {gold: g, kills: c}\n  }\n  \n  var _display = function() {\n    let comma = Utilities.commaThis\n    var m = _metrics()\n    let t = new Date().getTime() - sessionData.start\n    \n    let str = ''\n    str += '<div class=\"bash-summary-header\" id=\"bash-summary-title-target\">Target: <span class=\"hotred\">' + bash.target + '</span></div>'\n    str += '<br/>'\n    str += '<div class=\"bash-summary-header\" id=\"bash-summary-title-1\">' + 'Lifetime Data' + '</div>'\n    str += '<div class=\"bash-summary-element\" id=\"bash-summary-gold\">  <span class=\"bash-gold\">' + comma(m.gold) + '</span> gold</div>'\n    str += '<div class=\"bash-summary-element\" id=\"bash-summary-kills\">  <span class=\"bash-kills\">' + comma(m.kills) + '</span> kills</div>'\n    str += '<br/>'\n    str += '<div class=\"bash-summary-header\" id=\"bash-summary-title-2\">' + 'Sessional Data' + '</div>' \n    str += '<div class=\"bash-summary-element\" id=\"bash-summary-sessionTime\">  ' + Math.floor(Math.floor(t/1000)/60) + ' minutes</div>'\n    str += '<div class=\"bash-summary-element\" id=\"bash-summary-sessionGold\">  <span class=\"bash-gold\">' + comma(sessionData.gold) + '</span> gold this session</div>'\n    str += '<div class=\"bash-summary-element\" id=\"bash-summary-sessionKills\">  <span class=\"bash-kills\">' + comma(sessionData.tally) + '</span> kills this session</div>'\n    \n    bash._windowContent.empty().append(str)\n  }\n  \n  var memorise = function() {\n    if (Object.keys(db).length > 0) {\n      var m = meta\n          m = m.remote || {}\n      var r = m.retrieve\n      var w = m.write\n      var k = gmcp.Char.Name.name + '.bashing'\n      bash.report('Saving bash.aggregator.data() to Github.')\n      r(k, function(e) {\n        bash.report('Verified ' + k + ' repository. Writing...')\n        w(k, JSON.stringify(db, null, 2), e.apiSHA)\n      })\n    }\n  }\n  \n  var recall = function() {\n    var m = meta\n        m = m.remote || {}\n    var r = m.retrieve\n    var k = gmcp.Char.Name.name + '.bashing'\n    bash.report('Retrieving bash.aggregator.data() from Github.')\n    r(k, function(e) {\n      var datum = JSON.parse(e.content)\n      console.log('Local data >> ')\n      console.log(db)\n      console.log('Remote data >> ')\n      console.log(datum)\n      bash.report('Retrieved data from ' + k + ' repository. Replacing local db.')\n      db = datum\n      save()\n    })\n  }\n    \n  return {\n    // Local\n    load: load,\n    save: save,\n    // Remote\n    memorise: memorise,\n    recall  : recall,\n    \n    // record\n    accrete: accrete,\n    gold: gold,\n    \n    // sessions\n    createSession: createSession,\n    sessionLength: sessionLength,\n    sessionStop: sessionStop,\n    \n    // get\n    data: function() { return db },\n    sessional: function() { return sessionData },\n    _metrics: _metrics,\n    _display: _display,\n    \n    // settings\n    autosave: function(v) { if (typeof v != 'undefined') { autosave = v } return v },\n  }\n})()\n\nbash.aggregator.load()"
+        "output": "// save intra-edit sessional data\nif (typeof bash != 'undefined' &&\n    typeof bash.aggregator != 'undefined' && \n    typeof bash.aggregator.sessional == 'function') {\n\n  var sesh = bash.aggregator.sessional()\n      sesh = JSON.stringify(sesh)\n  localStorage.setItem('bash-sessional',sesh)\n}\n\n\n//start\nbash = typeof bash != 'undefined' ? bash : {}\n\nbash.aggregator = (function(){\n  // External functions\n  let read  = meta.local.read\n  let write = meta.local.write\n  \n  // Options\n  let options = {}\n      options.localKey   = 'bash-data'\n      options.sessionKey = 'bash-sessional'\n      options.remoteKey  = '{game}.{name}.bashing'\n      \n      options.autosave   = true\n  \n  // Internal data structures\n  let db = {}\n  let sessionData = {}\n  let lastMob = ''\n  let autosave = true\n  let sessional = true\n  \n  /* Memory Management */\n  // load up sessional\n  let n = localStorage.getItem('bash-sessional')\n  if (n) {\n    sessionData = JSON.parse(n)\n  }\n  \n  let load = function() { db = read(options.localKey); if (!db) { db = {}; write(options.localKey,db) } }\n  let save = function() { write(options.localKey,db) }\n  \n  let memorise = function() {\n    if (Object.keys(db).length > 0) {\n      var m = meta\n          m = m.remote || {}\n      var r = m.retrieve\n      var w = m.write\n      var k = gmcp.Char.Name.name + '.bashing'\n      bash.report('Saving bash.aggregator.data() to Github.')\n      r(k, function(e) {\n        bash.report('Verified ' + k + ' repository. Writing...')\n        w(k, JSON.stringify(db, null, 2), e.apiSHA)\n      })\n    }\n  }\n  \n  let recall = function() {\n    var m = meta\n        m = m.remote || {}\n    var r = m.retrieve\n    var k = gmcp.Char.Name.name + '.bashing'\n    bash.report('Retrieving bash.aggregator.data() from Github.')\n    r(k, function(e) {\n      var datum = JSON.parse(e.content)\n      console.log('Local data >> ')\n      console.log(db)\n      console.log('Remote data >> ')\n      console.log(datum)\n      bash.report('Retrieved data from ' + k + ' repository. Replacing local db.')\n      db = datum\n      save()\n    })\n  }\n  \n  let accrete = function(mob) {\n    if (typeof db[mob] == 'undefined') { db[mob] = {} }\n    db[mob].kills = db[mob].kills || 0\n    db[mob].kills += 1\n    \n    lastMob = mob\n    \n    if (autosave) { save() }\n    \n    // Sessional\n    if (sessional && sessionData) {\n      let area = 'unassignedArea'\n      if (player && typeof player.area == 'string') {\n        area = player.area\n      }\n      sessionData.kills[area] = sessionData.kills[area] || {}\n      sessionData.kills[area][mob] = sessionData.kills[area][mob] || {}\n      sessionData.kills[area][mob].kills = sessionData.kills[area][mob].kills || 0\n      sessionData.kills[area][mob].kills += 1\n      \n      sessionData.tally += 1\n    }\n    _display()\n  }\n  \n  let gold = function(g) {\n    let v = parseInt(g)\n    if (lastMob !== '' && typeof db[lastMob] != 'undefined') {\n      db[lastMob].gold = db[lastMob].gold || 0\n      db[lastMob].gold += v\n      db[lastMob].value = Math.floor(db[lastMob].gold / db[lastMob].kills ? db[lastMob].kills : 0)\n    }\n    if (autosave) { save() }\n    if (sessional && sessionData) {\n      let area = 'unassignedArea'\n      if (player && typeof player.area == 'string') {\n        area = player.area\n      }\n      sessionData.kills[area] = sessionData.kills[area] || {}\n      sessionData.kills[area][lastMob] = sessionData.kills[area][lastMob] || {}\n      sessionData.kills[area][lastMob].gold = sessionData.kills[area][lastMob].gold || 0\n      sessionData.kills[area][lastMob].gold += v\n      \n      sessionData.gold = sessionData.gold || 0\n      sessionData.gold += v\n    }\n    _display()\n  }\n  \n  let createSession = function() {\n    sessionData = {}\n    \n    // Timing metrics\n    sessionData.start = new Date().getTime()\n    \n    // Kill metrics\n    sessionData.kills = {}\n    sessionData.kills.unassignedArea = {}\n    \n    sessionData.tally = 0\n    sessionData.gold  = 0\n  }\n  let sessionLength = function() {\n    let stop = sessionData.end || new Date().getTime()\n    return (stop - sessionData.start) / 1000\n  }\n  let sessionStop = function() {\n    sessionData.end = new Date().getTime()\n    return (sessionData.end - sessionData.start) / 1000\n  }\n  if (!sessionData.kills) { createSession() }\n  \n  let _metrics = function() {\n    let c = 0\n    let g = 0\n    let k = db\n    for (var mobName in k) {\n      let mob = k[mobName]\n      c += mob.kills\n      g += mob.gold || 0\n    }\n    return {gold: g, kills: c}\n  }\n  \n  var _display = function() {\n    let comma = Utilities.commaThis\n    var m = _metrics()\n    let t = new Date().getTime() - sessionData.start\n    \n    let str = ''\n    str += '<div class=\"bash-summary-header\" id=\"bash-summary-title-target\">Target: <span class=\"hotred\">' + bash.target + '</span></div>'\n    str += '<br/>'\n    str += '<div class=\"bash-summary-header\" id=\"bash-summary-title-1\">' + 'Lifetime Data' + '</div>'\n    str += '<div class=\"bash-summary-element\" id=\"bash-summary-gold\">  <span class=\"bash-gold\">' + comma(m.gold) + '</span> gold</div>'\n    str += '<div class=\"bash-summary-element\" id=\"bash-summary-kills\">  <span class=\"bash-kills\">' + comma(m.kills) + '</span> kills</div>'\n    str += '<br/>'\n    str += '<div class=\"bash-summary-header\" id=\"bash-summary-title-2\">' + 'Sessional Data' + '</div>' \n    str += '<div class=\"bash-summary-element\" id=\"bash-summary-sessionTime\">  ' + Math.floor(Math.floor(t/1000)/60) + ' minutes</div>'\n    str += '<div class=\"bash-summary-element\" id=\"bash-summary-sessionGold\">  <span class=\"bash-gold\">' + comma(sessionData.gold) + '</span> gold this session</div>'\n    str += '<div class=\"bash-summary-element\" id=\"bash-summary-sessionKills\">  <span class=\"bash-kills\">' + comma(sessionData.tally) + '</span> kills this session</div>'\n    \n    bash._windowContent.empty().append(str)\n  }\n    \n  return {\n    /* Memory Management */\n    // Local\n    load: load,\n    save: save,\n    // Remote\n    memorise: memorise,\n    recall  : recall,\n    \n    // record\n    accrete: accrete,\n    gold: gold,\n    \n    // sessions\n    createSession: createSession,\n    sessionLength: sessionLength,\n    sessionStop: sessionStop,\n    \n    // get\n    data: function() { return db },\n    sessional: function() { return sessionData },\n    _metrics: _metrics,\n    _display: _display,\n    \n    // settings\n    autosave: function(v) { if (typeof v != 'undefined') { autosave = v } return v },\n  }\n})()\n\nbash.aggregator.load()"
+      },
+      {
+        "name": "bash.criticals",
+        "type": "script",
+        "id": "QO-5ikhse",
+        "output": ""
       },
       {
         "name": "bashing-dictionary",
@@ -943,6 +949,12 @@
             "output": "bash.directory = {}\n\nbash.directory['Azdun Catacombs'] = {\n  key: 'azduncatacombs',\n  validTargets: [\n    'a cursed phantasm',\n    'a shambling zombie',\n  ],\n}\n\nbash.dictionary = {}\n\nbash.dictionary['azduncatacombs::a cursed phantasm'] = {\n  threat: 4,\n  value : 2,\n}\nbash.dictionary['azduncatacombs::a shambling zombie'] = {\n  threat: 3,\n  value : 2,\n}\nbash.dictionary['azduncatacombs::a decaying lich'] = {\n  threat: 5,\n  value : 3,\n}\nbash.dictionary['azduncatacombs::Malvoc, the Unholy'] = {\n  threat: 3,\n  value : 4,\n}\nbash.dictionary['azduncatacombs::Ulgase, the lich crone'] = {\n  threat: 3,\n  value : 3,\n}\nbash.dictionary['azduncatacombs::an accursed skeleton'] = {\n  threat: 4,\n  value : 4,\n}\nbash.dictionary['azduncatacombs::an undead knight'] = {\n  threat: 5,\n  value : 5,\n}\nbash.dictionary['azduncatacombs::a flesh-eating slug'] = {\n  threat: 7,\n  value : 4,\n}"
           }
         ]
+      },
+      {
+        "name": "bash.rage",
+        "type": "script",
+        "id": "QO-xgu2fa",
+        "output": "bash = typeof bash != 'undefined' ? bash : {}\n\nbash.rage = 0\nbash.rageAvailable = []\n\nbash.rageReset = function() {\n  bash.rage = 0\n  bash.rageAvailable = []\n}\n\nbash.rageParse = function(list) {\n  if (!list) { return }\n  let args = list.split(',')\n  args.forEach(function(e,v){\n    let h = e.trim()\n    if (bash.rageAvailable.indexOf(h) == -1) {\n      bash.rageAvailable.push(h)\n    }\n  })\n}"
       },
       {
         "name": "bash (.+?)",
@@ -1114,40 +1126,34 @@
                 "output": "sub(matches[0], '<span class=\"violent\">' + matches[0] + '</span>')"
               }
             ]
-          }
-        ]
-      },
-      {
-        "name": "Rage",
-        "type": "folder",
-        "id": "QO-iyoe80",
-        "desc": "",
-        "is_open": true,
-        "children": [
-          {
-            "name": "bash.rage",
-            "type": "script",
-            "id": "QO-xgu2fa",
-            "output": "bash = typeof bash != 'undefined' ? bash : {}\n\nbash.rage = 0\nbash.rageAvailable = []\n\nbash.rageReset = function() {\n  bash.rage = 0\n  bash.rageAvailable = []\n}\n\nbash.rageParse = function(list) {\n  if (!list) { return }\n  let args = list.split(',')\n  args.forEach(function(e,v){\n    let h = e.trim()\n    if (bash.rageAvailable.indexOf(h) == -1) {\n      bash.rageAvailable.push(h)\n    }\n  })\n}"
           },
           {
-            "name": "Rage-",
-            "type": "trigger",
-            "id": "QO-mczn5g",
-            "patterns": [
-              "^Your rage fades away\\.$"
-            ],
-            "output": "bash.rageReset()"
-          },
-          {
-            "name": "Rage Count",
-            "type": "trigger",
-            "id": "QO-v5a68b",
-            "patterns": [
-              "^\\[Rage\\]\\: \\+\\d+\\.\\d+\\. Total\\: (\\d+\\.\\d+)",
-              "^\\[Rage\\]\\: \\+\\d+\\.\\d+\\. Total\\: (\\d+\\.\\d+) Now Available\\: (.+?)$"
-            ],
-            "output": "let A = matches[1]\nlet B = parseFloat(A)\n\nbash.rage = B\n\nbash.rageParse(matches[2])"
+            "name": "Rage Triggers",
+            "type": "folder",
+            "id": "QO-jo6x4e",
+            "desc": "",
+            "is_open": false,
+            "children": [
+              {
+                "name": "Rage-",
+                "type": "trigger",
+                "id": "QO-mczn5g",
+                "patterns": [
+                  "^Your rage fades away\\.$"
+                ],
+                "output": "bash.rageReset()"
+              },
+              {
+                "name": "Rage Count",
+                "type": "trigger",
+                "id": "QO-v5a68b",
+                "patterns": [
+                  "^\\[Rage\\]\\: \\+\\d+\\.\\d+\\. Total\\: (\\d+\\.\\d+)",
+                  "^\\[Rage\\]\\: \\+\\d+\\.\\d+\\. Total\\: (\\d+\\.\\d+) Now Available\\: (.+?)$"
+                ],
+                "output": "let A = matches[1]\nlet B = parseFloat(A)\n\nbash.rage = B\n\nbash.rageParse(matches[2])"
+              }
+            ]
           }
         ]
       },
