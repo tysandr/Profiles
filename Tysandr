@@ -973,6 +973,15 @@
         "output": "bash.aggregator.remember()"
       },
       {
+        "name": "bash.load",
+        "type": "alias",
+        "id": "QO-nfpc92",
+        "patterns": [
+          "^bash\\.load"
+        ],
+        "output": "bash.aggregator.recall()"
+      },
+      {
         "name": "balance+",
         "type": "trigger",
         "id": "QO-dl3b2f",
