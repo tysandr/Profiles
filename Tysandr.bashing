@@ -133,9 +133,9 @@
         "value": 2
       },
       "an accursed skeleton": {
-        "kills": 8,
-        "gold": 2484,
-        "value": 310
+        "kills": 10,
+        "gold": 3273,
+        "value": 327
       },
       "a vicious ghast": {
         "kills": 10,
@@ -146,6 +146,10 @@
         "kills": 6,
         "gold": 1332,
         "value": 222
+      },
+      "unidentified mob": {
+        "gold": 586,
+        "value": 586
       },
       "Underlord Seroth": {
         "kills": 1,
@@ -160,11 +164,11 @@
     }
   },
   "crits": {
-    "strikes": 741,
-    "CRUSHING CRITICAL": 71,
-    "OBLITERATING CRITICAL": 32,
-    "CRITICAL": 144,
+    "strikes": 765,
+    "CRUSHING CRITICAL": 74,
+    "OBLITERATING CRITICAL": 33,
+    "CRITICAL": 151,
     "WORLD-SHATTERING CRITICAL": 4,
-    "ANNIHILATINGLY POWERFUL CRITICAL": 11
+    "ANNIHILATINGLY POWERFUL CRITICAL": 12
   }
 }
