@@ -896,7 +896,7 @@
     "type": "folder",
     "id": "QO-48xl1h",
     "desc": "",
-    "is_open": true,
+    "is_open": false,
     "children": [
       {
         "name": "bashing",
