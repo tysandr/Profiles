@@ -995,24 +995,8 @@
         "type": "trigger",
         "id": "QO-jwrz7b",
         "patterns": [
-          "^You stand up\\.$"
-        ],
-        "output": "if (bash.state === 1) {\n  bash.attack()\n}"
-      },
-      {
-        "name": "stun-",
-        "type": "trigger",
-        "id": "QO-aw88f9",
-        "patterns": [
-          "^You are no longer stunned\\.$"
-        ],
-        "output": "if (bash.state === 1) {\n  bash.attack()\n}"
-      },
-      {
-        "name": "paralysis-",
-        "type": "trigger",
-        "id": "QO-tulaoz",
-        "patterns": [
+          "^You stand up\\.$",
+          "^You are no longer stunned\\.$",
           "^Your muscles unlock; you are no longer paralysed\\.$"
         ],
         "output": "if (bash.state === 1) {\n  bash.attack()\n}"
