@@ -17,9 +17,9 @@
         "value": 128
       },
       "an elite mhun keeper": {
-        "kills": 42,
-        "gold": 22135,
-        "value": 527
+        "kills": 44,
+        "gold": 22681,
+        "value": 515
       },
       "a mhun miner": {
         "kills": 92,
@@ -121,9 +121,9 @@
         "value": 128
       },
       "unidentified mob": {
-        "gold": 233,
-        "value": 233,
-        "kills": 1
+        "gold": 844,
+        "value": 844,
+        "kills": 2
       }
     },
     "the Azdun Catacombs": {
@@ -170,6 +170,8 @@
     }
   },
   "crits": {
-    "strikes": 1
+    "strikes": 10,
+    "CRUSHING CRITICAL": 2,
+    "CRITICAL": 1
   }
 }
