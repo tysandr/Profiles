@@ -148,9 +148,9 @@
         "value": 185
       },
       "a flesh-eating slug": {
-        "kills": 12,
-        "gold": 3135,
-        "value": 261
+        "kills": 14,
+        "gold": 3721,
+        "value": 265
       },
       "Underlord Seroth": {
         "kills": 1,
@@ -158,23 +158,23 @@
         "value": 2009
       },
       "an unravelling mummy": {
-        "kills": 13,
-        "gold": 6723,
-        "value": 517
+        "kills": 14,
+        "gold": 7261,
+        "value": 518
       },
       "Rhuzios, the Mummy Lord": {
-        "kills": 1,
-        "gold": 1920,
-        "value": 1920
+        "kills": 2,
+        "gold": 4582,
+        "value": 2291
       }
     }
   },
   "crits": {
-    "strikes": 467,
-    "CRUSHING CRITICAL": 46,
-    "CRITICAL": 108,
-    "ANNIHILATINGLY POWERFUL CRITICAL": 5,
-    "OBLITERATING CRITICAL": 21,
-    "WORLD-SHATTERING CRITICAL": 7
+    "strikes": 543,
+    "CRUSHING CRITICAL": 47,
+    "CRITICAL": 116,
+    "ANNIHILATINGLY POWERFUL CRITICAL": 6,
+    "OBLITERATING CRITICAL": 23,
+    "WORLD-SHATTERING CRITICAL": 9
   }
 }
