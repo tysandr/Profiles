@@ -148,9 +148,9 @@
         "value": 185
       },
       "a flesh-eating slug": {
-        "kills": 17,
-        "gold": 4577,
-        "value": 269
+        "kills": 18,
+        "gold": 4940,
+        "value": 274
       },
       "Underlord Seroth": {
         "kills": 1,
@@ -168,9 +168,9 @@
         "value": 2291
       },
       "an undead knight": {
-        "kills": 9,
-        "gold": 5582,
-        "value": 620
+        "kills": 10,
+        "gold": 6029,
+        "value": 602
       },
       "Underlord Dreyvos": {
         "kills": 1,
@@ -180,11 +180,11 @@
     }
   },
   "crits": {
-    "strikes": 835,
-    "CRUSHING CRITICAL": 74,
-    "CRITICAL": 177,
+    "strikes": 875,
+    "CRUSHING CRITICAL": 84,
+    "CRITICAL": 181,
     "ANNIHILATINGLY POWERFUL CRITICAL": 12,
-    "OBLITERATING CRITICAL": 35,
+    "OBLITERATING CRITICAL": 37,
     "WORLD-SHATTERING CRITICAL": 12
   }
 }
