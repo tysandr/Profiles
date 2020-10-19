@@ -138,9 +138,9 @@
         "value": 189
       },
       "an accursed skeleton": {
-        "kills": 24,
-        "gold": 7974,
-        "value": 332
+        "kills": 25,
+        "gold": 8337,
+        "value": 333
       },
       "a vicious ghast": {
         "kills": 10,
@@ -166,15 +166,20 @@
         "kills": 2,
         "gold": 4582,
         "value": 2291
+      },
+      "an undead knight": {
+        "kills": 5,
+        "gold": 3228,
+        "value": 645
       }
     }
   },
   "crits": {
-    "strikes": 543,
-    "CRUSHING CRITICAL": 47,
-    "CRITICAL": 116,
-    "ANNIHILATINGLY POWERFUL CRITICAL": 6,
-    "OBLITERATING CRITICAL": 23,
-    "WORLD-SHATTERING CRITICAL": 9
+    "strikes": 650,
+    "CRUSHING CRITICAL": 58,
+    "CRITICAL": 145,
+    "ANNIHILATINGLY POWERFUL CRITICAL": 7,
+    "OBLITERATING CRITICAL": 29,
+    "WORLD-SHATTERING CRITICAL": 10
   }
 }
