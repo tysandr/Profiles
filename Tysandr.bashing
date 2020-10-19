@@ -138,9 +138,9 @@
         "value": 189
       },
       "an accursed skeleton": {
-        "kills": 25,
-        "gold": 8337,
-        "value": 333
+        "kills": 26,
+        "gold": 8640,
+        "value": 332
       },
       "a vicious ghast": {
         "kills": 10,
@@ -168,9 +168,9 @@
         "value": 2291
       },
       "an undead knight": {
-        "kills": 6,
-        "gold": 3741,
-        "value": 623
+        "kills": 8,
+        "gold": 4884,
+        "value": 610
       },
       "Underlord Dreyvos": {
         "kills": 1,
@@ -180,11 +180,11 @@
     }
   },
   "crits": {
-    "strikes": 724,
-    "CRUSHING CRITICAL": 60,
-    "CRITICAL": 147,
-    "ANNIHILATINGLY POWERFUL CRITICAL": 7,
-    "OBLITERATING CRITICAL": 29,
+    "strikes": 770,
+    "CRUSHING CRITICAL": 65,
+    "CRITICAL": 159,
+    "ANNIHILATINGLY POWERFUL CRITICAL": 8,
+    "OBLITERATING CRITICAL": 33,
     "WORLD-SHATTERING CRITICAL": 11
   }
 }
