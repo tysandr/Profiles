@@ -177,7 +177,7 @@
         "name": "player._handleAfflictions",
         "type": "script",
         "id": "QO-ikaazp",
-        "output": "player.affs = typeof player.affs != 'undefined' ? player.affs : {}\n\nplayer._handleAfflictions = function(data) {\n  player.affs = {}\n  for (var k = 0; k < data.length; k++) {\n    player.affs[data[k].name] = data[k]\n  }\n}\n\nplayer._handleAfflictionsAdd = function(data) {\n    console.log(data)\n    console.log(data.name)\n  player.affs[data.name] = data\n}\n\nplayer._handleAfflictionsRemove = function(data) {\n  delete player.affs[data[0]]\n}"
+        "output": "player.affs = typeof player.affs != 'undefined' ? player.affs : {}\n\nplayer._handleAfflictions = function(data) {\n  player.affs = {}\n  for (var k = 0; k < data.length; k++) {\n    player.affs[data[k].name] = data[k]\n  }\n}\n\nplayer._handleAfflictionsAdd = function(data) {\n  player.affs[data.name] = data\n}\n\nplayer._handleAfflictionsRemove = function(data) {\n  delete player.affs[data[0]]\n}"
       }
     ]
   },
