@@ -2,8 +2,8 @@
   "datum": {
     "Moghedu": {
       "a mhun guard": {
-        "kills": 102,
-        "gold": 13403,
+        "kills": 107,
+        "gold": 14059,
         "value": 131
       },
       "a master mhun miner": {
@@ -17,9 +17,9 @@
         "value": 128
       },
       "an elite mhun keeper": {
-        "kills": 44,
-        "gold": 22681,
-        "value": 515
+        "kills": 46,
+        "gold": 23874,
+        "value": 519
       },
       "a mhun miner": {
         "kills": 92,
@@ -32,9 +32,9 @@
         "value": 178
       },
       "a mhun knight": {
-        "kills": 48,
-        "gold": 13746,
-        "value": 286
+        "kills": 50,
+        "gold": 14299,
+        "value": 285
       },
       "Sir Mertyn, Grand Champion of Moghedu": {
         "kills": 5,
@@ -42,8 +42,8 @@
         "value": 165
       },
       "a mhun archer": {
-        "kills": 36,
-        "gold": 6010,
+        "kills": 39,
+        "gold": 6511,
         "value": 166
       },
       "a mhun bodyguard": {
@@ -52,8 +52,8 @@
         "value": 278
       },
       "a mhun conjuror": {
-        "kills": 46,
-        "gold": 9404,
+        "kills": 47,
+        "gold": 9618,
         "value": 204
       },
       "an adolescent mhun": {
@@ -175,11 +175,11 @@
     }
   },
   "crits": {
-    "strikes": 875,
-    "CRUSHING CRITICAL": 84,
-    "CRITICAL": 181,
-    "ANNIHILATINGLY POWERFUL CRITICAL": 12,
-    "OBLITERATING CRITICAL": 37,
+    "strikes": 999,
+    "CRUSHING CRITICAL": 98,
+    "CRITICAL": 208,
+    "ANNIHILATINGLY POWERFUL CRITICAL": 16,
+    "OBLITERATING CRITICAL": 43,
     "WORLD-SHATTERING CRITICAL": 12
   }
 }
