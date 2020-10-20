@@ -133,14 +133,14 @@
         "value": 189
       },
       "an accursed skeleton": {
-        "kills": 37,
-        "gold": 12335,
+        "kills": 39,
+        "gold": 13021,
         "value": 333
       },
       "a vicious ghast": {
-        "kills": 11,
-        "gold": 2017,
-        "value": 183
+        "kills": 16,
+        "gold": 2764,
+        "value": 172
       },
       "a flesh-eating slug": {
         "kills": 24,
@@ -175,11 +175,11 @@
     }
   },
   "crits": {
-    "strikes": 1399,
-    "CRUSHING CRITICAL": 129,
-    "CRITICAL": 290,
-    "ANNIHILATINGLY POWERFUL CRITICAL": 21,
-    "OBLITERATING CRITICAL": 54,
-    "WORLD-SHATTERING CRITICAL": 20
+    "strikes": 1467,
+    "CRUSHING CRITICAL": 131,
+    "CRITICAL": 304,
+    "ANNIHILATINGLY POWERFUL CRITICAL": 22,
+    "OBLITERATING CRITICAL": 55,
+    "WORLD-SHATTERING CRITICAL": 23
   }
 }
