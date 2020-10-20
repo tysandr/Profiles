@@ -141,7 +141,7 @@
     "type": "folder",
     "id": "QO-kkt7eh",
     "desc": "",
-    "is_open": false,
+    "is_open": true,
     "children": [
       {
         "name": "player._init",
@@ -258,7 +258,7 @@
     "type": "folder",
     "id": "QO-rqobz9",
     "desc": "",
-    "is_open": false,
+    "is_open": true,
     "output": "/*\n  \n  Requires \"player\", \"pdb\" module\n  \n */",
     "children": [
       {
@@ -271,7 +271,7 @@
         "name": "cb, css-rules",
         "type": "script",
         "id": "QO-dfwl11",
-        "output": "cb = typeof cb != 'undefined' ? cb : {}\n\ncb.className = 'combat-rules'\n\ncb.inject = function(rule) {\n  if (!rule) { return }\n  $('body').append('<div class=\"' + cb.className + '\">&shy;<style>' + rule + '</style></div>')\n}\n\ncb.css = function() {\n  $('.' + cb.className).remove()\n  \n  cb.inject(`\n  #selfwindow-nameplate {\n    position   : absolute;\n    bottom     : 0%;\n    width      : 100%;\n    margin-left: -2.3em;\n    direction  : rtl;\n    font-family: Lekton;\n    font-size  : 9pt;\n    color      : rgba(67,97,117,1);\n    line-height: 17px;\n  }\n  #selfwindow-afflictions {\n    position   : absolute;\n    bottom     : 24px;\n    width      : 100%;\n    margin-left: -0.3em;\n    direction  : rtl;\n    font-family: Lekton;\n    font-size  : 9pt;\n    color      : rgba(67,67,67,1);\n    line-height: 13px;\n  }\n  #selfwindow-afflictions div {\n    white-space: pre-wrap;\n  }\n  \n  #targetwindow-nameplate {\n    position   : absolute;\n    top        : 11px;\n    width      : 100%;\n    margin-left: -2.0em;\n    direction  : rtl;\n    font-family: Noto Sans, Lekton;\n    font-size  : 10pt;\n    color      : rgba(117,33,33,1);\n    line-height: 17px;\n  }\n  #targetwindow-afflictions {\n    position   : absolute;\n    top        : 35px;\n    width      : 100%;\n    margin-left: -0.3em;\n    direction  : rtl;\n    font-family: Lekton;\n    font-size  : 9pt;\n    color      : rgba(67,67,67,1);\n    line-height: 13px;\n  }\n  `)\n}\n\ncb.css()"
+        "output": "cb = typeof cb != 'undefined' ? cb : {}\n\ncb.className = 'combat-rules'\n\ncb.inject = function(rule) {\n  if (!rule) { return }\n  $('body').append('<div class=\"' + cb.className + '\">&shy;<style>' + rule + '</style></div>')\n}\n\ncb.css = function() {\n  $('.' + cb.className).remove()\n  \n  cb.inject(`\n  #selfwindow-nameplate {\n    position   : absolute;\n    bottom     : 0%;\n    width      : 100%;\n    margin-left: -2.3em;\n    direction  : rtl;\n    font-family: Lekton;\n    font-size  : 9pt;\n    color      : rgba(67,97,117,1);\n    line-height: 17px;\n  }\n  #selfwindow-afflictions {\n    position   : absolute;\n    bottom     : 24px;\n    width      : 100%;\n    margin-left: -0.3em;\n    direction  : rtl;\n    font-family: Lekton;\n    font-size  : 9pt;\n    color      : rgba(67,67,67,1);\n    line-height: 13px;\n  }\n  #selfwindow-afflictions div {\n    white-space: pre-wrap;\n  }\n  .selfwindow-affliction.active {\n    color      : rgba( 111, 201, 144, 1.00 );\n  }\n  \n  #targetwindow-nameplate {\n    position   : absolute;\n    top        : 11px;\n    width      : 100%;\n    margin-left: -2.0em;\n    direction  : rtl;\n    font-family: Noto Sans, Lekton;\n    font-size  : 10pt;\n    color      : rgba(117,33,33,1);\n    line-height: 17px;\n  }\n  #targetwindow-afflictions {\n    position   : absolute;\n    top        : 35px;\n    width      : 100%;\n    margin-left: -0.3em;\n    direction  : rtl;\n    font-family: Lekton;\n    font-size  : 9pt;\n    color      : rgba(67,67,67,1);\n    line-height: 13px;\n  }\n  `)\n}\n\ncb.css()"
       },
       {
         "name": "cb, gmcp routing",
@@ -302,7 +302,7 @@
         "type": "folder",
         "id": "QO-0mo0vn",
         "desc": "",
-        "is_open": false,
+        "is_open": true,
         "children": [
           {
             "name": "`cb, combat mode",
@@ -350,7 +350,7 @@
             "name": "cb, self-window",
             "type": "script",
             "id": "QO-th0dse",
-            "output": "cb = typeof cb != 'undefined' ? cb : {}\n\ncb._selfwindowRender = function() {\n  let rpad = Utilities.rpad\n  let lockAfflictions = ['impatience','paralysis','asthma','slickness','anorexia']\n  \n  var d = ''\n  d += '<div id=\"\">'\n  d += '</div>'\n  d += '<div id=\"selfwindow-nameplate\">'\n  d += player.name ? player.name : 'Player'\n  d += '</div>'\n  d += '<div id=\"selfwindow-afflictions\">'\n  for (var j = lockAfflictions.length - 1; j > -1; j--) {\n    d += '<div id=\"selfwindow-aff-' + lockAfflictions[j] + '\">'\n    d += rpad(lockAfflictions[j], 1) + ' '\n    d += '<span class=\"selfwindow-aff-bracket\">['\n    d += '<span class=\"selfwindow-aff-' + lockAfflictions[j] + '-bracket\">x</span>'\n    d += ']</span>'\n    d += '</div>'\n  }\n  d += '</div>'\n  \n  cb.window1.append(d)\n}\n\ncb._selfwindowUpdate = function() {\n  let lpad = Utilities.lpad\n  let rpad = Utilities.rpad\n  let p = player\n  \n  \n}\n"
+            "output": "cb = typeof cb != 'undefined' ? cb : {}\ncb.divDirectory = cb.divDirectory || {}\n\ncb._selfwindowRender = function() {\n  \n  let rpad = Utilities.rpad\n  let lockAfflictions = ['impatience','paralysis','asthma','slickness','anorexia']\n  \n  var d = ''\n  d += '<div id=\"\">'\n  d += '</div>'\n  d += '<div id=\"selfwindow-nameplate\">'\n  d += player.name ? player.name : 'Player'\n  d += '</div>'\n  d += '<div id=\"selfwindow-afflictions\">'\n  for (var j = lockAfflictions.length - 1; j > -1; j--) {\n    d += '<div id=\"selfwindow-aff-' + lockAfflictions[j] + '\" class=\"selfwindow-affliction\">'\n    d += rpad(lockAfflictions[j], 1) + ' '\n    d += '<span class=\"selfwindow-aff-bracket\">['\n    d += '<span class=\"selfwindow-aff-' + lockAfflictions[j] + '-bracket\">x</span>'\n    d += ']</span>'\n    d += '</div>'\n  }\n  d += '</div>'\n  \n  cb.window1.append(d)\n  \n  lockAfflictions.forEach(function(aff, idx){\n    cb.divDirectory[aff] = document.getElementById('selfwindow-aff-' + aff)\n  })\n}\n\ncb._selfwindowUpdate = function() {\n  let lpad = Utilities.lpad\n  let rpad = Utilities.rpad\n  let p = player\n  \n  var v = document.getElementsByClassName('selfwindow-affliction')\n  for (var k = 0; k < v.length; k++) {\n    v[k].classList.remove('active')\n  }\n  for (var aff in players.affs) {\n    if (cb.divDirectory[aff]) {\n      cb.divDirectory[aff].classList.add('active')\n    }\n  }\n}\n"
           },
           {
             "name": "cb, target-window",
@@ -392,7 +392,7 @@
         "type": "folder",
         "id": "QO-zzpt84",
         "desc": "",
-        "is_open": true,
+        "is_open": false,
         "children": [
           {
             "name": "affliction+",
@@ -499,7 +499,7 @@
             "type": "folder",
             "id": "QO-3lnjqo",
             "desc": "",
-            "is_open": true,
+            "is_open": false,
             "children": [
               {
                 "name": "Flying+",
