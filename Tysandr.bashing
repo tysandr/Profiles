@@ -133,8 +133,8 @@
         "value": 189
       },
       "an accursed skeleton": {
-        "kills": 70,
-        "gold": 23810,
+        "kills": 71,
+        "gold": 24170,
         "value": 340
       },
       "a vicious ghast": {
@@ -175,11 +175,11 @@
     }
   },
   "crits": {
-    "strikes": 2982,
+    "strikes": 2993,
     "CRUSHING CRITICAL": 278,
-    "CRITICAL": 648,
+    "CRITICAL": 650,
     "ANNIHILATINGLY POWERFUL CRITICAL": 63,
-    "OBLITERATING CRITICAL": 119,
-    "WORLD-SHATTERING CRITICAL": 41
+    "OBLITERATING CRITICAL": 120,
+    "WORLD-SHATTERING CRITICAL": 42
   }
 }
