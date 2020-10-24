@@ -133,9 +133,9 @@
         "value": 189
       },
       "an accursed skeleton": {
-        "kills": 87,
-        "gold": 30102,
-        "value": 346
+        "kills": 89,
+        "gold": 30751,
+        "value": 345
       },
       "a vicious ghast": {
         "kills": 38,
@@ -143,9 +143,9 @@
         "value": 176
       },
       "a flesh-eating slug": {
-        "kills": 56,
-        "gold": 17033,
-        "value": 304
+        "kills": 57,
+        "gold": 17267,
+        "value": 302
       },
       "Underlord Seroth": {
         "kills": 3,
@@ -153,9 +153,9 @@
         "value": 1893
       },
       "an unravelling mummy": {
-        "kills": 38,
-        "gold": 22059,
-        "value": 580
+        "kills": 39,
+        "gold": 22727,
+        "value": 582
       },
       "Rhuzios, the Mummy Lord": {
         "kills": 3,
@@ -175,11 +175,11 @@
     }
   },
   "crits": {
-    "strikes": 3881,
-    "CRUSHING CRITICAL": 359,
-    "CRITICAL": 839,
-    "ANNIHILATINGLY POWERFUL CRITICAL": 83,
-    "OBLITERATING CRITICAL": 147,
-    "WORLD-SHATTERING CRITICAL": 50
+    "strikes": 3923,
+    "CRUSHING CRITICAL": 365,
+    "CRITICAL": 853,
+    "ANNIHILATINGLY POWERFUL CRITICAL": 86,
+    "OBLITERATING CRITICAL": 149,
+    "WORLD-SHATTERING CRITICAL": 51
   }
 }
