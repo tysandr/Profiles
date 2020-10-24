@@ -133,9 +133,9 @@
         "value": 189
       },
       "an accursed skeleton": {
-        "kills": 77,
-        "gold": 26404,
-        "value": 342
+        "kills": 78,
+        "gold": 26766,
+        "value": 343
       },
       "a vicious ghast": {
         "kills": 29,
@@ -143,9 +143,9 @@
         "value": 178
       },
       "a flesh-eating slug": {
-        "kills": 47,
-        "gold": 14427,
-        "value": 306
+        "kills": 48,
+        "gold": 14679,
+        "value": 305
       },
       "Underlord Seroth": {
         "kills": 2,
@@ -163,9 +163,9 @@
         "value": 2291
       },
       "an undead knight": {
-        "kills": 46,
-        "gold": 26375,
-        "value": 573
+        "kills": 48,
+        "gold": 27712,
+        "value": 577
       },
       "Underlord Dreyvos": {
         "kills": 3,
@@ -175,11 +175,11 @@
     }
   },
   "crits": {
-    "strikes": 3324,
-    "CRUSHING CRITICAL": 311,
-    "CRITICAL": 727,
+    "strikes": 3374,
+    "CRUSHING CRITICAL": 315,
+    "CRITICAL": 741,
     "ANNIHILATINGLY POWERFUL CRITICAL": 71,
-    "OBLITERATING CRITICAL": 130,
-    "WORLD-SHATTERING CRITICAL": 46
+    "OBLITERATING CRITICAL": 134,
+    "WORLD-SHATTERING CRITICAL": 47
   }
 }
