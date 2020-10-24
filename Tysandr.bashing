@@ -163,9 +163,9 @@
         "value": 2291
       },
       "an undead knight": {
-        "kills": 45,
-        "gold": 25925,
-        "value": 576
+        "kills": 46,
+        "gold": 26375,
+        "value": 573
       },
       "Underlord Dreyvos": {
         "kills": 3,
@@ -175,11 +175,11 @@
     }
   },
   "crits": {
-    "strikes": 3295,
-    "CRUSHING CRITICAL": 310,
-    "CRITICAL": 717,
-    "ANNIHILATINGLY POWERFUL CRITICAL": 70,
-    "OBLITERATING CRITICAL": 129,
+    "strikes": 3324,
+    "CRUSHING CRITICAL": 311,
+    "CRITICAL": 727,
+    "ANNIHILATINGLY POWERFUL CRITICAL": 71,
+    "OBLITERATING CRITICAL": 130,
     "WORLD-SHATTERING CRITICAL": 46
   }
 }
