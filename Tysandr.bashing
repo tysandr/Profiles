@@ -133,8 +133,8 @@
         "value": 179
       },
       "an accursed skeleton": {
-        "kills": 100,
-        "gold": 34341,
+        "kills": 102,
+        "gold": 35007,
         "value": 343
       },
       "a vicious ghast": {
@@ -143,9 +143,9 @@
         "value": 176
       },
       "a flesh-eating slug": {
-        "kills": 62,
-        "gold": 18750,
-        "value": 302
+        "kills": 64,
+        "gold": 19513,
+        "value": 304
       },
       "Underlord Seroth": {
         "kills": 3,
@@ -175,11 +175,11 @@
     }
   },
   "crits": {
-    "strikes": 4452,
-    "CRUSHING CRITICAL": 411,
-    "CRITICAL": 965,
-    "ANNIHILATINGLY POWERFUL CRITICAL": 92,
-    "OBLITERATING CRITICAL": 166,
+    "strikes": 4502,
+    "CRUSHING CRITICAL": 415,
+    "CRITICAL": 974,
+    "ANNIHILATINGLY POWERFUL CRITICAL": 94,
+    "OBLITERATING CRITICAL": 169,
     "WORLD-SHATTERING CRITICAL": 60
   }
 }
