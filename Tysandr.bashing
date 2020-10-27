@@ -153,9 +153,9 @@
         "value": 1893
       },
       "an unravelling mummy": {
-        "kills": 46,
-        "gold": 26195,
-        "value": 569
+        "kills": 47,
+        "gold": 26690,
+        "value": 567
       },
       "Rhuzios, the Mummy Lord": {
         "kills": 4,
@@ -175,11 +175,11 @@
     }
   },
   "crits": {
-    "strikes": 4748,
+    "strikes": 4755,
     "CRUSHING CRITICAL": 435,
-    "CRITICAL": 1026,
+    "CRITICAL": 1028,
     "ANNIHILATINGLY POWERFUL CRITICAL": 95,
-    "OBLITERATING CRITICAL": 177,
+    "OBLITERATING CRITICAL": 179,
     "WORLD-SHATTERING CRITICAL": 66
   }
 }
