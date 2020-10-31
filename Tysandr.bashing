@@ -133,9 +133,9 @@
         "value": 179
       },
       "an accursed skeleton": {
-        "kills": 119,
-        "gold": 40870,
-        "value": 346
+        "kills": 122,
+        "gold": 42144,
+        "value": 345
       },
       "a vicious ghast": {
         "kills": 50,
@@ -153,9 +153,9 @@
         "value": 2163
       },
       "an unravelling mummy": {
-        "kills": 49,
-        "gold": 27950,
-        "value": 570
+        "kills": 52,
+        "gold": 29561,
+        "value": 568
       },
       "Rhuzios, the Mummy Lord": {
         "kills": 4,
@@ -175,11 +175,11 @@
     }
   },
   "crits": {
-    "strikes": 5389,
-    "CRUSHING CRITICAL": 484,
-    "CRITICAL": 1164,
-    "ANNIHILATINGLY POWERFUL CRITICAL": 107,
-    "OBLITERATING CRITICAL": 214,
-    "WORLD-SHATTERING CRITICAL": 79
+    "strikes": 5468,
+    "CRUSHING CRITICAL": 493,
+    "CRITICAL": 1184,
+    "ANNIHILATINGLY POWERFUL CRITICAL": 108,
+    "OBLITERATING CRITICAL": 219,
+    "WORLD-SHATTERING CRITICAL": 82
   }
 }
