@@ -1144,7 +1144,7 @@
                 "patterns": [
                   "^(?:He|She) has (\\d+)\\% health remaining\\.$"
                 ],
-                "output": "let r = parseInt(matches[1])\nlet c = 'green'\nif (r < 20) {\n  c = 'hotred'\n} else if (r < 45) {\n  c = 'yellow'\n}\n\nlet ra = Math.floor(r / 5)\nlet rb = 20 - ra\nlet ax = 'x' // '&laquo;'\nax += '<span class=\"' + c + '\">'\nfor (var j = 0; j < ra; j++) {\n  ax += '&compfn;'\n}\nax += '</span>'\nax += '<span class=\"mute\">'\nfor (var k = 0; k < rb; k++) {\n  ax += '&compfn;'\n}\nax += '</span>'\nax += 'x' // '&raquo;'\nax = '<span class=\"black\">' + ax + '</span>'\n\nsub(matches[0], '<span class=\"normal\">' + matches[0] + '</span> ' + ax)\nsub(matches[1], '<span class=\"' + c + '\">' + matches[1] + ' </span>')"
+                "output": "let r = parseInt(matches[1])\nlet c = 'green'\nif (r < 20) {\n  c = 'hotred'\n} else if (r < 45) {\n  c = 'yellow'\n}\n\nlet ra = Math.floor(r / 5)\nlet rb = 20 - ra\nlet ax = '[' // '&laquo;'\nax += '<span class=\"' + c + '\">'\nfor (var j = 0; j < ra; j++) {\n  ax += '&compfn;'\n}\nax += '</span>'\nax += '<span class=\"mute\">'\nfor (var k = 0; k < rb; k++) {\n  ax += '&compfn;'\n}\nax += '</span>'\nax += ']' // '&raquo;'\nax = '<span class=\"black\">' + ax + '</span>'\n\nsub(matches[0], '<span class=\"normal\">' + matches[0] + '</span> ' + ax)\nsub(matches[1], '<span class=\"' + c + '\">' + matches[1] + ' </span>')"
               }
             ]
           },
