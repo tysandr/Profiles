@@ -123,19 +123,19 @@
     },
     "the Azdun Catacombs": {
       "a shambling zombie": {
-        "kills": 13,
-        "gold": 1619,
-        "value": 124
+        "kills": 19,
+        "gold": 2194,
+        "value": 121
       },
       "a cursed phantasm": {
-        "kills": 4,
-        "gold": 717,
-        "value": 179
+        "kills": 6,
+        "gold": 1222,
+        "value": 203
       },
       "an accursed skeleton": {
-        "kills": 130,
-        "gold": 44757,
-        "value": 344
+        "kills": 135,
+        "gold": 46332,
+        "value": 343
       },
       "a vicious ghast": {
         "kills": 50,
@@ -143,9 +143,9 @@
         "value": 173
       },
       "a flesh-eating slug": {
-        "kills": 84,
-        "gold": 25243,
-        "value": 300
+        "kills": 88,
+        "gold": 26369,
+        "value": 299
       },
       "Underlord Seroth": {
         "kills": 4,
@@ -153,19 +153,19 @@
         "value": 2163
       },
       "an unravelling mummy": {
-        "kills": 59,
-        "gold": 33495,
+        "kills": 63,
+        "gold": 35747,
         "value": 567
       },
       "Rhuzios, the Mummy Lord": {
-        "kills": 5,
-        "gold": 9111,
-        "value": 1822
+        "kills": 6,
+        "gold": 11773,
+        "value": 1962
       },
       "an undead knight": {
-        "kills": 71,
-        "gold": 39422,
-        "value": 555
+        "kills": 72,
+        "gold": 40167,
+        "value": 557
       },
       "Underlord Dreyvos": {
         "kills": 6,
@@ -175,11 +175,11 @@
     }
   },
   "crits": {
-    "strikes": 6705,
-    "CRUSHING CRITICAL": 617,
-    "CRITICAL": 1470,
-    "ANNIHILATINGLY POWERFUL CRITICAL": 132,
-    "OBLITERATING CRITICAL": 261,
-    "WORLD-SHATTERING CRITICAL": 102
+    "strikes": 6985,
+    "CRUSHING CRITICAL": 637,
+    "CRITICAL": 1518,
+    "ANNIHILATINGLY POWERFUL CRITICAL": 140,
+    "OBLITERATING CRITICAL": 275,
+    "WORLD-SHATTERING CRITICAL": 106
   }
 }
