@@ -993,7 +993,7 @@
         "patterns": [
           "^bash\\.p$"
         ],
-        "output": "if (bash.pause) {\n  bash.pause = false\n} else {\n  bash.pause = true\n}"
+        "output": "if (bash.pause) {\n  bash.pause = false\n  bash.attack()\n  bash.report('Bashing resumed.')\n} else {\n  bash.pause = true\n  bash.report('Bashing paused.')\n}"
       },
       {
         "name": "Bashing Triggers",
