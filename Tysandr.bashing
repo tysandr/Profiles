@@ -168,18 +168,18 @@
         "value": 557
       },
       "Underlord Dreyvos": {
-        "kills": 5,
-        "gold": 10343,
-        "value": 2068
+        "kills": 6,
+        "gold": 12569,
+        "value": 2094
       }
     }
   },
   "crits": {
-    "strikes": 5098,
-    "CRUSHING CRITICAL": 467,
+    "strikes": 5132,
+    "CRUSHING CRITICAL": 468,
     "CRITICAL": 1103,
     "ANNIHILATINGLY POWERFUL CRITICAL": 101,
-    "OBLITERATING CRITICAL": 199,
+    "OBLITERATING CRITICAL": 200,
     "WORLD-SHATTERING CRITICAL": 73
   }
 }
