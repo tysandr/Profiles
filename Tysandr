@@ -1007,7 +1007,7 @@
             "type": "folder",
             "id": "QO-7o2ucs",
             "desc": "",
-            "is_open": true,
+            "is_open": false,
             "children": [
               {
                 "name": "slain+",
@@ -1126,7 +1126,7 @@
             "type": "folder",
             "id": "QO-7vhc74",
             "desc": "",
-            "is_open": false,
+            "is_open": true,
             "children": [
               {
                 "name": "talisman+",
@@ -1144,7 +1144,7 @@
                 "patterns": [
                   "^(?:He|She) has (\\d+)\\% health remaining\\.$"
                 ],
-                "output": "let r = parseInt(matches[1])\nlet c = 'green'\nif (r < 20) {\n  c = 'hotred'\n} else if (r < 45) {\n  c = 'yellow'\n}\n\nsub(matches[0], '<span class=\"normal\">' + matches[0] + '</span>')\nsub(matches[1], '<span class=\"' + c + '\">' + matches[1] + ' </span>')"
+                "output": "let r = parseInt(matches[1])\nlet c = 'green'\nif (r < 20) {\n  c = 'hotred'\n} else if (r < 45) {\n  c = 'yellow'\n}\n\nlet ax = ''\nfor (var j = 0; j < 20; j++) {\n  ax += '&compfn;'\n}\n\nsub(matches[0], '<span class=\"normal\">' + matches[0] + '</span> ' + ax)\nsub(matches[1], '<span class=\"' + c + '\">' + matches[1] + ' </span>')"
               }
             ]
           },
