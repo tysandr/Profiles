@@ -2,28 +2,28 @@
   "datum": {
     "Moghedu": {
       "a mhun guard": {
-        "kills": 107,
-        "gold": 14059,
-        "value": 131
+        "kills": 121,
+        "gold": 16105,
+        "value": 133
       },
       "a master mhun miner": {
-        "kills": 28,
-        "gold": 5733,
-        "value": 204
+        "kills": 36,
+        "gold": 7148,
+        "value": 198
       },
       "a mhun labourer": {
-        "kills": 43,
-        "gold": 5527,
-        "value": 128
+        "kills": 56,
+        "gold": 7536,
+        "value": 134
       },
       "an elite mhun keeper": {
-        "kills": 46,
-        "gold": 23874,
-        "value": 519
+        "kills": 57,
+        "gold": 29520,
+        "value": 517
       },
       "a mhun miner": {
-        "kills": 92,
-        "gold": 13585,
+        "kills": 119,
+        "gold": 17594,
         "value": 147
       },
       "Guard Captain Haedra": {
@@ -32,9 +32,9 @@
         "value": 178
       },
       "a mhun knight": {
-        "kills": 50,
-        "gold": 14299,
-        "value": 285
+        "kills": 55,
+        "gold": 15780,
+        "value": 286
       },
       "Sir Mertyn, Grand Champion of Moghedu": {
         "kills": 5,
@@ -42,9 +42,9 @@
         "value": 165
       },
       "a mhun archer": {
-        "kills": 39,
-        "gold": 6511,
-        "value": 166
+        "kills": 44,
+        "gold": 7267,
+        "value": 165
       },
       "a mhun bodyguard": {
         "kills": 9,
@@ -52,39 +52,39 @@
         "value": 278
       },
       "a mhun conjuror": {
-        "kills": 47,
-        "gold": 9618,
-        "value": 204
+        "kills": 56,
+        "gold": 11642,
+        "value": 207
       },
       "an adolescent mhun": {
-        "kills": 14,
-        "gold": 363,
-        "value": 30
+        "kills": 18,
+        "gold": 462,
+        "value": 25
       },
       "a mhun demolitionist": {
-        "kills": 25,
-        "gold": 2984,
-        "value": 119
+        "kills": 32,
+        "gold": 3941,
+        "value": 123
       },
       "a master mhun demolitionist": {
-        "kills": 3,
-        "gold": 325,
-        "value": 108
+        "kills": 4,
+        "gold": 457,
+        "value": 114
       },
       "Mhunk, an inattentive mhun miner": {
-        "kills": 4,
+        "kills": 5,
         "gold": 371,
         "value": 92
       },
       "Guard Captain Chelak": {
-        "kills": 3,
-        "gold": 638,
-        "value": 3
+        "kills": 4,
+        "gold": 889,
+        "value": 222
       },
       "Master Tarrin": {
-        "kills": 5,
-        "gold": 522,
-        "value": 5
+        "kills": 6,
+        "gold": 671,
+        "value": 111
       },
       "Guard Captain Darion": {
         "kills": 1,
@@ -175,11 +175,11 @@
     }
   },
   "crits": {
-    "strikes": 5889,
-    "CRUSHING CRITICAL": 528,
-    "CRITICAL": 1287,
-    "ANNIHILATINGLY POWERFUL CRITICAL": 115,
-    "OBLITERATING CRITICAL": 230,
-    "WORLD-SHATTERING CRITICAL": 85
+    "strikes": 6705,
+    "CRUSHING CRITICAL": 617,
+    "CRITICAL": 1470,
+    "ANNIHILATINGLY POWERFUL CRITICAL": 132,
+    "OBLITERATING CRITICAL": 261,
+    "WORLD-SHATTERING CRITICAL": 102
   }
 }
