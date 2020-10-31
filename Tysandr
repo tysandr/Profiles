@@ -392,7 +392,7 @@
         "type": "folder",
         "id": "QO-zzpt84",
         "desc": "",
-        "is_open": false,
+        "is_open": true,
         "children": [
           {
             "name": "affliction+",
@@ -499,7 +499,7 @@
             "type": "folder",
             "id": "QO-3lnjqo",
             "desc": "",
-            "is_open": false,
+            "is_open": true,
             "children": [
               {
                 "name": "Flying+",
