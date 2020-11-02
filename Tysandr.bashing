@@ -143,9 +143,9 @@
         "value": 173
       },
       "a flesh-eating slug": {
-        "kills": 92,
-        "gold": 27447,
-        "value": 298
+        "kills": 93,
+        "gold": 27808,
+        "value": 299
       },
       "Underlord Seroth": {
         "kills": 5,
@@ -163,7 +163,7 @@
         "value": 1962
       },
       "an undead knight": {
-        "kills": 90,
+        "kills": 91,
         "gold": 54499,
         "value": 605
       },
@@ -175,11 +175,11 @@
     }
   },
   "crits": {
-    "strikes": 7964,
-    "CRUSHING CRITICAL": 725,
-    "CRITICAL": 1731,
+    "strikes": 7981,
+    "CRUSHING CRITICAL": 728,
+    "CRITICAL": 1737,
     "ANNIHILATINGLY POWERFUL CRITICAL": 156,
-    "OBLITERATING CRITICAL": 313,
-    "WORLD-SHATTERING CRITICAL": 119
+    "OBLITERATING CRITICAL": 314,
+    "WORLD-SHATTERING CRITICAL": 120
   }
 }
