@@ -148,9 +148,9 @@
         "value": 299
       },
       "Underlord Seroth": {
-        "kills": 4,
-        "gold": 8652,
-        "value": 2163
+        "kills": 5,
+        "gold": 11624,
+        "value": 2324
       },
       "an unravelling mummy": {
         "kills": 66,
@@ -175,7 +175,7 @@
     }
   },
   "crits": {
-    "strikes": 7441,
+    "strikes": 7453,
     "CRUSHING CRITICAL": 681,
     "CRITICAL": 1616,
     "ANNIHILATINGLY POWERFUL CRITICAL": 147,
