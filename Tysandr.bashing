@@ -123,19 +123,19 @@
     },
     "the Azdun Catacombs": {
       "a shambling zombie": {
-        "kills": 26,
-        "gold": 2947,
+        "kills": 36,
+        "gold": 4071,
         "value": 113
       },
       "a cursed phantasm": {
-        "kills": 12,
-        "gold": 2451,
-        "value": 204
+        "kills": 13,
+        "gold": 2601,
+        "value": 200
       },
       "an accursed skeleton": {
-        "kills": 162,
-        "gold": 55229,
-        "value": 340
+        "kills": 166,
+        "gold": 56633,
+        "value": 341
       },
       "a vicious ghast": {
         "kills": 62,
@@ -143,8 +143,8 @@
         "value": 173
       },
       "a flesh-eating slug": {
-        "kills": 100,
-        "gold": 30238,
+        "kills": 101,
+        "gold": 30560,
         "value": 302
       },
       "Underlord Seroth": {
@@ -163,33 +163,38 @@
         "value": 1962
       },
       "an undead knight": {
-        "kills": 91,
-        "gold": 54499,
-        "value": 605
+        "kills": 98,
+        "gold": 58560,
+        "value": 597
       },
       "Underlord Dreyvos": {
-        "kills": 7,
-        "gold": 14888,
-        "value": 2126
+        "kills": 8,
+        "gold": 18047,
+        "value": 2255
       },
       "a decaying lich": {
-        "kills": 4,
-        "gold": 900,
-        "value": 225
+        "kills": 7,
+        "gold": 1527,
+        "value": 218
       },
       "Malvoc, the Unholy": {
         "kills": 1,
         "gold": 347,
         "value": 347
+      },
+      "Ulgase, the lich crone": {
+        "kills": 1,
+        "gold": 342,
+        "value": 342
       }
     }
   },
   "crits": {
-    "strikes": 8999,
-    "CRUSHING CRITICAL": 832,
-    "CRITICAL": 1976,
-    "ANNIHILATINGLY POWERFUL CRITICAL": 178,
-    "OBLITERATING CRITICAL": 360,
-    "WORLD-SHATTERING CRITICAL": 134
+    "strikes": 9433,
+    "CRUSHING CRITICAL": 859,
+    "CRITICAL": 2065,
+    "ANNIHILATINGLY POWERFUL CRITICAL": 181,
+    "OBLITERATING CRITICAL": 379,
+    "WORLD-SHATTERING CRITICAL": 142
   }
 }
