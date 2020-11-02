@@ -2,8 +2,8 @@
   "datum": {
     "Moghedu": {
       "a mhun guard": {
-        "kills": 121,
-        "gold": 16105,
+        "kills": 127,
+        "gold": 16915,
         "value": 133
       },
       "a master mhun miner": {
@@ -42,24 +42,24 @@
         "value": 165
       },
       "a mhun archer": {
-        "kills": 44,
-        "gold": 7267,
+        "kills": 46,
+        "gold": 7610,
         "value": 165
       },
       "a mhun bodyguard": {
-        "kills": 9,
-        "gold": 2508,
-        "value": 278
+        "kills": 10,
+        "gold": 2775,
+        "value": 277
       },
       "a mhun conjuror": {
-        "kills": 56,
-        "gold": 11642,
+        "kills": 59,
+        "gold": 12216,
         "value": 207
       },
       "an adolescent mhun": {
-        "kills": 18,
-        "gold": 462,
-        "value": 25
+        "kills": 19,
+        "gold": 507,
+        "value": 26
       },
       "a mhun demolitionist": {
         "kills": 32,
@@ -82,9 +82,9 @@
         "value": 222
       },
       "Master Tarrin": {
-        "kills": 6,
-        "gold": 671,
-        "value": 111
+        "kills": 7,
+        "gold": 790,
+        "value": 112
       },
       "Guard Captain Darion": {
         "kills": 1,
@@ -175,11 +175,11 @@
     }
   },
   "crits": {
-    "strikes": 7093,
-    "CRUSHING CRITICAL": 648,
-    "CRITICAL": 1542,
-    "ANNIHILATINGLY POWERFUL CRITICAL": 141,
-    "OBLITERATING CRITICAL": 282,
-    "WORLD-SHATTERING CRITICAL": 106
+    "strikes": 7209,
+    "CRUSHING CRITICAL": 658,
+    "CRITICAL": 1567,
+    "ANNIHILATINGLY POWERFUL CRITICAL": 143,
+    "OBLITERATING CRITICAL": 286,
+    "WORLD-SHATTERING CRITICAL": 109
   }
 }
