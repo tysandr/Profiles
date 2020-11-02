@@ -2,34 +2,34 @@
   "datum": {
     "Moghedu": {
       "a mhun guard": {
-        "kills": 127,
-        "gold": 16915,
+        "kills": 135,
+        "gold": 18015,
         "value": 133
       },
       "a master mhun miner": {
-        "kills": 36,
-        "gold": 7148,
-        "value": 198
+        "kills": 40,
+        "gold": 8131,
+        "value": 203
       },
       "a mhun labourer": {
-        "kills": 56,
-        "gold": 7536,
-        "value": 134
+        "kills": 67,
+        "gold": 8911,
+        "value": 133
       },
       "an elite mhun keeper": {
-        "kills": 57,
-        "gold": 29520,
-        "value": 517
+        "kills": 63,
+        "gold": 32235,
+        "value": 511
       },
       "a mhun miner": {
-        "kills": 119,
-        "gold": 17594,
-        "value": 147
+        "kills": 138,
+        "gold": 20191,
+        "value": 146
       },
       "Guard Captain Haedra": {
-        "kills": 1,
-        "gold": 178,
-        "value": 178
+        "kills": 2,
+        "gold": 409,
+        "value": 204
       },
       "a mhun knight": {
         "kills": 55,
@@ -42,9 +42,9 @@
         "value": 165
       },
       "a mhun archer": {
-        "kills": 46,
-        "gold": 7610,
-        "value": 165
+        "kills": 47,
+        "gold": 7807,
+        "value": 166
       },
       "a mhun bodyguard": {
         "kills": 10,
@@ -52,9 +52,9 @@
         "value": 277
       },
       "a mhun conjuror": {
-        "kills": 59,
-        "gold": 12216,
-        "value": 207
+        "kills": 62,
+        "gold": 12931,
+        "value": 208
       },
       "an adolescent mhun": {
         "kills": 19,
@@ -62,14 +62,14 @@
         "value": 26
       },
       "a mhun demolitionist": {
-        "kills": 32,
-        "gold": 3941,
-        "value": 123
+        "kills": 36,
+        "gold": 4351,
+        "value": 124
       },
       "a master mhun demolitionist": {
-        "kills": 4,
-        "gold": 457,
-        "value": 114
+        "kills": 5,
+        "gold": 611,
+        "value": 122
       },
       "Mhunk, an inattentive mhun miner": {
         "kills": 5,
@@ -92,9 +92,9 @@
         "value": 183
       },
       "Master Scout Madira": {
-        "kills": 1,
-        "gold": 832,
-        "value": 832
+        "kills": 2,
+        "gold": 1445,
+        "value": 722
       },
       "a mhun merchant": {
         "kills": 1,
@@ -175,11 +175,11 @@
     }
   },
   "crits": {
-    "strikes": 8358,
-    "CRUSHING CRITICAL": 779,
-    "CRITICAL": 1821,
-    "ANNIHILATINGLY POWERFUL CRITICAL": 165,
-    "OBLITERATING CRITICAL": 328,
-    "WORLD-SHATTERING CRITICAL": 125
+    "strikes": 8795,
+    "CRUSHING CRITICAL": 818,
+    "CRITICAL": 1928,
+    "ANNIHILATINGLY POWERFUL CRITICAL": 174,
+    "OBLITERATING CRITICAL": 350,
+    "WORLD-SHATTERING CRITICAL": 131
   }
 }
