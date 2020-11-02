@@ -123,14 +123,14 @@
     },
     "the Azdun Catacombs": {
       "a shambling zombie": {
-        "kills": 19,
-        "gold": 2194,
-        "value": 121
+        "kills": 26,
+        "gold": 2947,
+        "value": 113
       },
       "a cursed phantasm": {
-        "kills": 6,
-        "gold": 1222,
-        "value": 203
+        "kills": 12,
+        "gold": 2451,
+        "value": 204
       },
       "an accursed skeleton": {
         "kills": 162,
@@ -171,15 +171,25 @@
         "kills": 7,
         "gold": 14888,
         "value": 2126
+      },
+      "a decaying lich": {
+        "kills": 4,
+        "gold": 900,
+        "value": 225
+      },
+      "Malvoc, the Unholy": {
+        "kills": 1,
+        "gold": 347,
+        "value": 347
       }
     }
   },
   "crits": {
-    "strikes": 8795,
-    "CRUSHING CRITICAL": 818,
-    "CRITICAL": 1928,
-    "ANNIHILATINGLY POWERFUL CRITICAL": 174,
-    "OBLITERATING CRITICAL": 350,
-    "WORLD-SHATTERING CRITICAL": 131
+    "strikes": 8999,
+    "CRUSHING CRITICAL": 832,
+    "CRITICAL": 1976,
+    "ANNIHILATINGLY POWERFUL CRITICAL": 178,
+    "OBLITERATING CRITICAL": 360,
+    "WORLD-SHATTERING CRITICAL": 134
   }
 }
