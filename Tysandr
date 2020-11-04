@@ -1085,7 +1085,7 @@
             "type": "folder",
             "id": "QO-vjoae9",
             "desc": "",
-            "is_open": false,
+            "is_open": true,
             "children": [
               {
                 "name": "gold drop+",
