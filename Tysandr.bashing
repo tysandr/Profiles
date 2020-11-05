@@ -123,78 +123,78 @@
     },
     "the Azdun Catacombs": {
       "a shambling zombie": {
-        "kills": 36,
-        "gold": 4071,
-        "value": 113
+        "kills": 54,
+        "gold": 6214,
+        "value": 115
       },
       "a cursed phantasm": {
-        "kills": 13,
-        "gold": 2601,
-        "value": 200
+        "kills": 20,
+        "gold": 3850,
+        "value": 192
       },
       "an accursed skeleton": {
-        "kills": 198,
-        "gold": 68330,
+        "kills": 216,
+        "gold": 74672,
         "value": 345
       },
       "a vicious ghast": {
-        "kills": 82,
-        "gold": 13907,
-        "value": 171
+        "kills": 92,
+        "gold": 15485,
+        "value": 168
       },
       "a flesh-eating slug": {
-        "kills": 121,
-        "gold": 36167,
+        "kills": 130,
+        "gold": 38801,
         "value": 298
       },
       "Underlord Seroth": {
-        "kills": 7,
-        "gold": 17149,
-        "value": 2449
+        "kills": 8,
+        "gold": 20117,
+        "value": 2514
       },
       "an unravelling mummy": {
-        "kills": 83,
-        "gold": 46502,
-        "value": 560
+        "kills": 93,
+        "gold": 51474,
+        "value": 553
       },
       "Rhuzios, the Mummy Lord": {
-        "kills": 7,
-        "gold": 14049,
-        "value": 2007
+        "kills": 8,
+        "gold": 16275,
+        "value": 2034
       },
       "an undead knight": {
-        "kills": 122,
-        "gold": 72417,
-        "value": 593
+        "kills": 132,
+        "gold": 78130,
+        "value": 591
       },
       "Underlord Dreyvos": {
-        "kills": 10,
-        "gold": 23483,
-        "value": 2348
+        "kills": 11,
+        "gold": 25230,
+        "value": 2293
       },
       "a decaying lich": {
-        "kills": 7,
-        "gold": 1527,
-        "value": 218
+        "kills": 14,
+        "gold": 7050,
+        "value": 503
       },
       "Malvoc, the Unholy": {
-        "kills": 1,
-        "gold": 347,
-        "value": 347
+        "kills": 2,
+        "gold": 885,
+        "value": 442
       },
       "Ulgase, the lich crone": {
-        "kills": 1,
-        "gold": 342,
-        "value": 342
+        "kills": 2,
+        "gold": 743,
+        "value": 371
       }
     }
   },
   "crits": {
-    "strikes": 11024,
-    "CRUSHING CRITICAL": 976,
-    "CRITICAL": 2400,
-    "ANNIHILATINGLY POWERFUL CRITICAL": 217,
-    "OBLITERATING CRITICAL": 450,
-    "WORLD-SHATTERING CRITICAL": 165
+    "strikes": 12230,
+    "CRUSHING CRITICAL": 1108,
+    "CRITICAL": 2658,
+    "ANNIHILATINGLY POWERFUL CRITICAL": 248,
+    "OBLITERATING CRITICAL": 488,
+    "WORLD-SHATTERING CRITICAL": 185
   }
 }
