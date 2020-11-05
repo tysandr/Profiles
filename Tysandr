@@ -1094,7 +1094,9 @@
                 "patterns": [
                   "^A large pile of sovereigns spills from the corpse\\.$",
                   "^Numerous golden sovereigns spill from the corpse\\.$",
-                  "^A small pile of sovereigns spills from the corpse\\.$"
+                  "^A small pile of sovereigns spills from the corpse\\.$",
+                  "^A huge pile of sovereigns spills from the corpse\\.$",
+                  "^A mountainous pile of sovereigns spills from the corpse\\.$"
                 ],
                 "output": "bash.goldHere = true"
               },
