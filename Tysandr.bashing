@@ -2,8 +2,8 @@
   "datum": {
     "Moghedu": {
       "a mhun guard": {
-        "kills": 159,
-        "gold": 21272,
+        "kills": 161,
+        "gold": 21546,
         "value": 133
       },
       "a master mhun miner": {
@@ -12,18 +12,18 @@
         "value": 203
       },
       "a mhun labourer": {
-        "kills": 67,
-        "gold": 8911,
-        "value": 133
+        "kills": 69,
+        "gold": 9138,
+        "value": 132
       },
       "an elite mhun keeper": {
-        "kills": 66,
-        "gold": 34140,
-        "value": 517
+        "kills": 67,
+        "gold": 34506,
+        "value": 515
       },
       "a mhun miner": {
-        "kills": 138,
-        "gold": 20191,
+        "kills": 140,
+        "gold": 20514,
         "value": 146
       },
       "Guard Captain Haedra": {
@@ -32,8 +32,8 @@
         "value": 204
       },
       "a mhun knight": {
-        "kills": 69,
-        "gold": 19843,
+        "kills": 70,
+        "gold": 20090,
         "value": 287
       },
       "Sir Mertyn, Grand Champion of Moghedu": {
@@ -52,24 +52,24 @@
         "value": 269
       },
       "a mhun conjuror": {
-        "kills": 74,
-        "gold": 15158,
-        "value": 204
+        "kills": 78,
+        "gold": 15794,
+        "value": 202
       },
       "an adolescent mhun": {
-        "kills": 19,
-        "gold": 507,
-        "value": 26
+        "kills": 20,
+        "gold": 549,
+        "value": 27
       },
       "a mhun demolitionist": {
-        "kills": 36,
-        "gold": 4351,
-        "value": 124
+        "kills": 37,
+        "gold": 4471,
+        "value": 120
       },
       "a master mhun demolitionist": {
-        "kills": 5,
-        "gold": 611,
-        "value": 122
+        "kills": 6,
+        "gold": 729,
+        "value": 121
       },
       "Mhunk, an inattentive mhun miner": {
         "kills": 5,
@@ -77,9 +77,9 @@
         "value": 92
       },
       "Guard Captain Chelak": {
-        "kills": 5,
-        "gold": 1070,
-        "value": 214
+        "kills": 6,
+        "gold": 1546,
+        "value": 257
       },
       "Master Tarrin": {
         "kills": 8,
@@ -222,11 +222,11 @@
     }
   },
   "crits": {
-    "strikes": 14642,
-    "CRUSHING CRITICAL": 1340,
-    "CRITICAL": 3193,
-    "ANNIHILATINGLY POWERFUL CRITICAL": 291,
-    "OBLITERATING CRITICAL": 585,
-    "WORLD-SHATTERING CRITICAL": 224
+    "strikes": 14755,
+    "CRUSHING CRITICAL": 1351,
+    "CRITICAL": 3215,
+    "ANNIHILATINGLY POWERFUL CRITICAL": 293,
+    "OBLITERATING CRITICAL": 597,
+    "WORLD-SHATTERING CRITICAL": 225
   }
 }
