@@ -2,8 +2,8 @@
   "datum": {
     "Moghedu": {
       "a mhun guard": {
-        "kills": 146,
-        "gold": 19472,
+        "kills": 159,
+        "gold": 21272,
         "value": 133
       },
       "a master mhun miner": {
@@ -17,9 +17,9 @@
         "value": 133
       },
       "an elite mhun keeper": {
-        "kills": 63,
-        "gold": 32235,
-        "value": 511
+        "kills": 66,
+        "gold": 34140,
+        "value": 517
       },
       "a mhun miner": {
         "kills": 138,
@@ -32,29 +32,29 @@
         "value": 204
       },
       "a mhun knight": {
-        "kills": 58,
-        "gold": 16331,
-        "value": 281
+        "kills": 69,
+        "gold": 19843,
+        "value": 287
       },
       "Sir Mertyn, Grand Champion of Moghedu": {
-        "kills": 5,
-        "gold": 828,
-        "value": 165
+        "kills": 6,
+        "gold": 977,
+        "value": 162
       },
       "a mhun archer": {
-        "kills": 51,
-        "gold": 8489,
-        "value": 166
+        "kills": 55,
+        "gold": 9221,
+        "value": 167
       },
       "a mhun bodyguard": {
-        "kills": 11,
-        "gold": 2990,
-        "value": 271
+        "kills": 12,
+        "gold": 3237,
+        "value": 269
       },
       "a mhun conjuror": {
-        "kills": 67,
-        "gold": 13844,
-        "value": 206
+        "kills": 74,
+        "gold": 15158,
+        "value": 204
       },
       "an adolescent mhun": {
         "kills": 19,
@@ -87,9 +87,9 @@
         "value": 114
       },
       "Guard Captain Darion": {
-        "kills": 1,
-        "gold": 183,
-        "value": 183
+        "kills": 2,
+        "gold": 377,
+        "value": 188
       },
       "Master Scout Madira": {
         "kills": 2,
@@ -111,9 +111,9 @@
         "value": 123
       },
       "Sir Temelin, Knight Commander of Moghedu": {
-        "kills": 1,
-        "gold": 1114,
-        "value": 1114
+        "kills": 2,
+        "gold": 2476,
+        "value": 1238
       },
       "Gishuan, the blacksmith": {
         "kills": 1,
@@ -222,11 +222,11 @@
     }
   },
   "crits": {
-    "strikes": 14235,
-    "CRUSHING CRITICAL": 1304,
-    "CRITICAL": 3092,
-    "ANNIHILATINGLY POWERFUL CRITICAL": 287,
-    "OBLITERATING CRITICAL": 567,
-    "WORLD-SHATTERING CRITICAL": 217
+    "strikes": 14642,
+    "CRUSHING CRITICAL": 1340,
+    "CRITICAL": 3193,
+    "ANNIHILATINGLY POWERFUL CRITICAL": 291,
+    "OBLITERATING CRITICAL": 585,
+    "WORLD-SHATTERING CRITICAL": 224
   }
 }
