@@ -187,14 +187,46 @@
         "gold": 743,
         "value": 371
       }
+    },
+    "the Azdun Dungeon": {
+      "a decaying zombie": {
+        "kills": 12,
+        "gold": 885,
+        "value": 73
+      },
+      "a ghast": {
+        "kills": 5,
+        "gold": 622,
+        "value": 124
+      },
+      "a wight": {
+        "kills": 10,
+        "gold": 1878,
+        "value": 187
+      },
+      "a wraith": {
+        "kills": 7,
+        "gold": 979,
+        "value": 139
+      },
+      "a revolting ghoul": {
+        "kills": 7,
+        "gold": 593,
+        "value": 84
+      },
+      "a goblin ghoul": {
+        "kills": 1,
+        "gold": 105,
+        "value": 105
+      }
     }
   },
   "crits": {
-    "strikes": 12473,
-    "CRUSHING CRITICAL": 1128,
-    "CRITICAL": 2727,
-    "ANNIHILATINGLY POWERFUL CRITICAL": 252,
-    "OBLITERATING CRITICAL": 494,
-    "WORLD-SHATTERING CRITICAL": 186
+    "strikes": 12825,
+    "CRUSHING CRITICAL": 1171,
+    "CRITICAL": 2806,
+    "ANNIHILATINGLY POWERFUL CRITICAL": 261,
+    "OBLITERATING CRITICAL": 507,
+    "WORLD-SHATTERING CRITICAL": 192
   }
 }
