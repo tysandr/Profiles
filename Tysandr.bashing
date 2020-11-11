@@ -138,8 +138,8 @@
         "value": 347
       },
       "a vicious ghast": {
-        "kills": 103,
-        "gold": 17227,
+        "kills": 104,
+        "gold": 17424,
         "value": 167
       },
       "a flesh-eating slug": {
@@ -227,11 +227,11 @@
     }
   },
   "crits": {
-    "strikes": 15212,
+    "strikes": 15213,
     "CRUSHING CRITICAL": 1384,
     "CRITICAL": 3321,
     "ANNIHILATINGLY POWERFUL CRITICAL": 297,
     "OBLITERATING CRITICAL": 620,
-    "WORLD-SHATTERING CRITICAL": 234
+    "WORLD-SHATTERING CRITICAL": 235
   }
 }
