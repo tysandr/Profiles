@@ -133,44 +133,44 @@
         "value": 192
       },
       "an accursed skeleton": {
-        "kills": 261,
-        "gold": 90671,
+        "kills": 263,
+        "gold": 91395,
         "value": 347
       },
       "a vicious ghast": {
-        "kills": 113,
-        "gold": 18861,
-        "value": 166
+        "kills": 114,
+        "gold": 19091,
+        "value": 167
       },
       "a flesh-eating slug": {
         "kills": 160,
-        "gold": 47501,
-        "value": 296
+        "gold": 47711,
+        "value": 298
       },
       "Underlord Seroth": {
-        "kills": 10,
-        "gold": 24401,
-        "value": 2440
+        "kills": 11,
+        "gold": 27582,
+        "value": 2507
       },
       "an unravelling mummy": {
-        "kills": 103,
-        "gold": 57224,
-        "value": 555
+        "kills": 113,
+        "gold": 63088,
+        "value": 558
       },
       "Rhuzios, the Mummy Lord": {
-        "kills": 9,
-        "gold": 17986,
-        "value": 1998
+        "kills": 10,
+        "gold": 19815,
+        "value": 1981
       },
       "an undead knight": {
-        "kills": 166,
-        "gold": 97598,
+        "kills": 167,
+        "gold": 98122,
         "value": 587
       },
       "Underlord Dreyvos": {
-        "kills": 13,
-        "gold": 30404,
-        "value": 2338
+        "kills": 14,
+        "gold": 32161,
+        "value": 2297
       },
       "a decaying lich": {
         "kills": 14,
@@ -186,11 +186,6 @@
         "kills": 2,
         "gold": 743,
         "value": 371
-      },
-      "unidentified mob": {
-        "gold": 11887,
-        "value": 11887,
-        "kills": 1
       }
     },
     "the Azdun Dungeon": {
@@ -227,11 +222,11 @@
     }
   },
   "crits": {
-    "strikes": 15438,
-    "CRUSHING CRITICAL": 1404,
-    "CRITICAL": 3366,
-    "ANNIHILATINGLY POWERFUL CRITICAL": 300,
-    "OBLITERATING CRITICAL": 627,
-    "WORLD-SHATTERING CRITICAL": 239
+    "strikes": 15706,
+    "CRUSHING CRITICAL": 1422,
+    "CRITICAL": 3385,
+    "ANNIHILATINGLY POWERFUL CRITICAL": 314,
+    "OBLITERATING CRITICAL": 632,
+    "WORLD-SHATTERING CRITICAL": 243
   }
 }
