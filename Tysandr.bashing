@@ -2,8 +2,8 @@
   "datum": {
     "Moghedu": {
       "a mhun guard": {
-        "kills": 177,
-        "gold": 23712,
+        "kills": 178,
+        "gold": 23824,
         "value": 133
       },
       "a master mhun miner": {
@@ -227,9 +227,9 @@
     }
   },
   "crits": {
-    "strikes": 16259,
+    "strikes": 16262,
     "CRUSHING CRITICAL": 1468,
-    "CRITICAL": 3515,
+    "CRITICAL": 3516,
     "ANNIHILATINGLY POWERFUL CRITICAL": 328,
     "OBLITERATING CRITICAL": 652,
     "WORLD-SHATTERING CRITICAL": 255
