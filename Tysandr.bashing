@@ -2,8 +2,8 @@
   "datum": {
     "Moghedu": {
       "a mhun guard": {
-        "kills": 175,
-        "gold": 23439,
+        "kills": 177,
+        "gold": 23712,
         "value": 133
       },
       "a master mhun miner": {
@@ -17,9 +17,9 @@
         "value": 132
       },
       "an elite mhun keeper": {
-        "kills": 73,
-        "gold": 36654,
-        "value": 502
+        "kills": 74,
+        "gold": 37083,
+        "value": 501
       },
       "a mhun miner": {
         "kills": 140,
@@ -32,8 +32,8 @@
         "value": 204
       },
       "a mhun knight": {
-        "kills": 81,
-        "gold": 23687,
+        "kills": 83,
+        "gold": 24252,
         "value": 292
       },
       "Sir Mertyn, Grand Champion of Moghedu": {
@@ -42,9 +42,9 @@
         "value": 162
       },
       "a mhun archer": {
-        "kills": 61,
-        "gold": 10409,
-        "value": 170
+        "kills": 62,
+        "gold": 10619,
+        "value": 171
       },
       "a mhun bodyguard": {
         "kills": 13,
@@ -52,9 +52,9 @@
         "value": 272
       },
       "a mhun conjuror": {
-        "kills": 81,
-        "gold": 16615,
-        "value": 205
+        "kills": 86,
+        "gold": 17574,
+        "value": 204
       },
       "an adolescent mhun": {
         "kills": 21,
@@ -77,9 +77,9 @@
         "value": 92
       },
       "Guard Captain Chelak": {
-        "kills": 6,
-        "gold": 1546,
-        "value": 257
+        "kills": 7,
+        "gold": 1741,
+        "value": 248
       },
       "Master Tarrin": {
         "kills": 9,
@@ -227,11 +227,11 @@
     }
   },
   "crits": {
-    "strikes": 16133,
-    "CRUSHING CRITICAL": 1461,
-    "CRITICAL": 3492,
-    "ANNIHILATINGLY POWERFUL CRITICAL": 326,
-    "OBLITERATING CRITICAL": 647,
-    "WORLD-SHATTERING CRITICAL": 253
+    "strikes": 16259,
+    "CRUSHING CRITICAL": 1468,
+    "CRITICAL": 3515,
+    "ANNIHILATINGLY POWERFUL CRITICAL": 328,
+    "OBLITERATING CRITICAL": 652,
+    "WORLD-SHATTERING CRITICAL": 255
   }
 }
