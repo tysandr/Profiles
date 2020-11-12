@@ -2,8 +2,8 @@
   "datum": {
     "Moghedu": {
       "a mhun guard": {
-        "kills": 161,
-        "gold": 21546,
+        "kills": 175,
+        "gold": 23439,
         "value": 133
       },
       "a master mhun miner": {
@@ -17,9 +17,9 @@
         "value": 132
       },
       "an elite mhun keeper": {
-        "kills": 67,
-        "gold": 34506,
-        "value": 515
+        "kills": 73,
+        "gold": 36654,
+        "value": 502
       },
       "a mhun miner": {
         "kills": 140,
@@ -32,34 +32,34 @@
         "value": 204
       },
       "a mhun knight": {
-        "kills": 70,
-        "gold": 20090,
-        "value": 287
+        "kills": 81,
+        "gold": 23687,
+        "value": 292
       },
       "Sir Mertyn, Grand Champion of Moghedu": {
-        "kills": 6,
+        "kills": 7,
         "gold": 977,
         "value": 162
       },
       "a mhun archer": {
-        "kills": 55,
-        "gold": 9221,
-        "value": 167
+        "kills": 61,
+        "gold": 10409,
+        "value": 170
       },
       "a mhun bodyguard": {
-        "kills": 12,
-        "gold": 3237,
-        "value": 269
+        "kills": 13,
+        "gold": 3540,
+        "value": 272
       },
       "a mhun conjuror": {
-        "kills": 78,
-        "gold": 15794,
-        "value": 202
+        "kills": 81,
+        "gold": 16615,
+        "value": 205
       },
       "an adolescent mhun": {
-        "kills": 20,
-        "gold": 549,
-        "value": 27
+        "kills": 21,
+        "gold": 602,
+        "value": 28
       },
       "a mhun demolitionist": {
         "kills": 37,
@@ -82,14 +82,14 @@
         "value": 257
       },
       "Master Tarrin": {
-        "kills": 8,
-        "gold": 916,
-        "value": 114
+        "kills": 9,
+        "gold": 1055,
+        "value": 117
       },
       "Guard Captain Darion": {
-        "kills": 2,
-        "gold": 377,
-        "value": 188
+        "kills": 3,
+        "gold": 561,
+        "value": 187
       },
       "Master Scout Madira": {
         "kills": 2,
@@ -111,14 +111,19 @@
         "value": 123
       },
       "Sir Temelin, Knight Commander of Moghedu": {
-        "kills": 2,
-        "gold": 2476,
-        "value": 1238
+        "kills": 3,
+        "gold": 3310,
+        "value": 1103
       },
       "Gishuan, the blacksmith": {
         "kills": 1,
         "gold": 128,
         "value": 128
+      },
+      "Cook Oshalo": {
+        "kills": 1,
+        "gold": 108,
+        "value": 108
       }
     },
     "the Azdun Catacombs": {
@@ -222,11 +227,11 @@
     }
   },
   "crits": {
-    "strikes": 15706,
-    "CRUSHING CRITICAL": 1422,
-    "CRITICAL": 3385,
-    "ANNIHILATINGLY POWERFUL CRITICAL": 314,
-    "OBLITERATING CRITICAL": 632,
-    "WORLD-SHATTERING CRITICAL": 243
+    "strikes": 16133,
+    "CRUSHING CRITICAL": 1461,
+    "CRITICAL": 3492,
+    "ANNIHILATINGLY POWERFUL CRITICAL": 326,
+    "OBLITERATING CRITICAL": 647,
+    "WORLD-SHATTERING CRITICAL": 253
   }
 }
