@@ -128,18 +128,18 @@
     },
     "the Azdun Catacombs": {
       "a shambling zombie": {
-        "kills": 54,
-        "gold": 6214,
-        "value": 115
+        "kills": 61,
+        "gold": 7138,
+        "value": 117
       },
       "a cursed phantasm": {
-        "kills": 20,
-        "gold": 3850,
-        "value": 192
+        "kills": 22,
+        "gold": 4180,
+        "value": 190
       },
       "an accursed skeleton": {
-        "kills": 264,
-        "gold": 91863,
+        "kills": 267,
+        "gold": 92810,
         "value": 347
       },
       "a vicious ghast": {
@@ -148,9 +148,9 @@
         "value": 167
       },
       "a flesh-eating slug": {
-        "kills": 161,
-        "gold": 47956,
-        "value": 297
+        "kills": 162,
+        "gold": 48340,
+        "value": 298
       },
       "Underlord Seroth": {
         "kills": 11,
@@ -168,9 +168,9 @@
         "value": 1981
       },
       "an undead knight": {
-        "kills": 167,
-        "gold": 98122,
-        "value": 587
+        "kills": 173,
+        "gold": 101758,
+        "value": 588
       },
       "Underlord Dreyvos": {
         "kills": 14,
@@ -178,9 +178,9 @@
         "value": 2297
       },
       "a decaying lich": {
-        "kills": 14,
-        "gold": 7050,
-        "value": 503
+        "kills": 16,
+        "gold": 7521,
+        "value": 470
       },
       "Malvoc, the Unholy": {
         "kills": 2,
@@ -191,6 +191,11 @@
         "kills": 2,
         "gold": 743,
         "value": 371
+      },
+      "a goblin ghoul": {
+        "kills": 1,
+        "gold": 97,
+        "value": 97
       }
     },
     "the Azdun Dungeon": {
@@ -227,11 +232,11 @@
     }
   },
   "crits": {
-    "strikes": 16296,
-    "CRUSHING CRITICAL": 1470,
-    "CRITICAL": 3526,
-    "ANNIHILATINGLY POWERFUL CRITICAL": 329,
-    "OBLITERATING CRITICAL": 653,
-    "WORLD-SHATTERING CRITICAL": 255
+    "strikes": 16572,
+    "CRUSHING CRITICAL": 1512,
+    "CRITICAL": 3587,
+    "ANNIHILATINGLY POWERFUL CRITICAL": 334,
+    "OBLITERATING CRITICAL": 668,
+    "WORLD-SHATTERING CRITICAL": 260
   }
 }
