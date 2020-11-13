@@ -2,8 +2,8 @@
   "datum": {
     "Moghedu": {
       "a mhun guard": {
-        "kills": 178,
-        "gold": 23824,
+        "kills": 179,
+        "gold": 23936,
         "value": 133
       },
       "a master mhun miner": {
@@ -42,9 +42,9 @@
         "value": 162
       },
       "a mhun archer": {
-        "kills": 62,
-        "gold": 10619,
-        "value": 171
+        "kills": 63,
+        "gold": 10756,
+        "value": 170
       },
       "a mhun bodyguard": {
         "kills": 13,
@@ -52,8 +52,8 @@
         "value": 272
       },
       "a mhun conjuror": {
-        "kills": 86,
-        "gold": 17574,
+        "kills": 87,
+        "gold": 17823,
         "value": 204
       },
       "an adolescent mhun": {
@@ -232,11 +232,11 @@
     }
   },
   "crits": {
-    "strikes": 17000,
-    "CRUSHING CRITICAL": 1545,
-    "CRITICAL": 3675,
-    "ANNIHILATINGLY POWERFUL CRITICAL": 338,
+    "strikes": 17017,
+    "CRUSHING CRITICAL": 1546,
+    "CRITICAL": 3678,
+    "ANNIHILATINGLY POWERFUL CRITICAL": 339,
     "OBLITERATING CRITICAL": 685,
-    "WORLD-SHATTERING CRITICAL": 266
+    "WORLD-SHATTERING CRITICAL": 268
   }
 }
