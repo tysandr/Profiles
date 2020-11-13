@@ -932,7 +932,7 @@
         "name": "bash.display",
         "type": "script",
         "id": "QO-gejp4m",
-        "output": "bash = typeof bash != 'undefined' ? bash : {}\n\nbash.display = (function(){\n    \n  var updateMobs = function() {\n    var str = ''\n    for (var j = 0; j < bash._roomMobs.length; j++) {\n      var mob = bash._roomMobs[j]\n      str += '<div class=\"bash-mobiles\" id=\"bash-mobile-' + mob.id + '\">'\n      str += mob.name + ' - ' + mob.id +  '</div>'\n    }\n    $('.bash-summary-mobiles').append(str)\n  }\n    \n  return {\n    inroom: updateMobs,\n  }\n})()"
+        "output": "bash = typeof bash != 'undefined' ? bash : {}\n\nbash.display = (function(){\n    \n  var updateMobs = function() {\n    var str = ''\n    for (var j = 0; j < bash._roomMobs.length; j++) {\n      var mob = bash._roomMobs[j]\n      str += '<div class=\"bash-mobiles\" id=\"bash-mobile-' + mob.id + '\">'\n      str += mob.name + ' - ' + mob.id +  '</div>'\n    }\n    console.log(str)\n    $('.bash-summary-mobiles').empty().append(str)\n  }\n    \n  return {\n    inroom: updateMobs,\n  }\n})()"
       },
       {
         "name": "bashing-dictionary",
