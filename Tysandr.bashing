@@ -138,24 +138,24 @@
         "value": 190
       },
       "an accursed skeleton": {
-        "kills": 267,
-        "gold": 92810,
-        "value": 347
+        "kills": 273,
+        "gold": 94460,
+        "value": 346
       },
       "a vicious ghast": {
-        "kills": 114,
-        "gold": 19091,
+        "kills": 124,
+        "gold": 20750,
         "value": 167
       },
       "a flesh-eating slug": {
-        "kills": 162,
-        "gold": 48340,
+        "kills": 165,
+        "gold": 49245,
         "value": 298
       },
       "Underlord Seroth": {
-        "kills": 11,
-        "gold": 27582,
-        "value": 2507
+        "kills": 12,
+        "gold": 29907,
+        "value": 2492
       },
       "an unravelling mummy": {
         "kills": 113,
@@ -168,14 +168,14 @@
         "value": 1981
       },
       "an undead knight": {
-        "kills": 173,
-        "gold": 101758,
-        "value": 588
+        "kills": 177,
+        "gold": 104350,
+        "value": 589
       },
       "Underlord Dreyvos": {
-        "kills": 14,
-        "gold": 32161,
-        "value": 2297
+        "kills": 15,
+        "gold": 34303,
+        "value": 2286
       },
       "a decaying lich": {
         "kills": 16,
@@ -232,11 +232,11 @@
     }
   },
   "crits": {
-    "strikes": 16572,
-    "CRUSHING CRITICAL": 1512,
-    "CRITICAL": 3587,
-    "ANNIHILATINGLY POWERFUL CRITICAL": 334,
-    "OBLITERATING CRITICAL": 668,
-    "WORLD-SHATTERING CRITICAL": 260
+    "strikes": 16923,
+    "CRUSHING CRITICAL": 1536,
+    "CRITICAL": 3654,
+    "ANNIHILATINGLY POWERFUL CRITICAL": 337,
+    "OBLITERATING CRITICAL": 681,
+    "WORLD-SHATTERING CRITICAL": 265
   }
 }
