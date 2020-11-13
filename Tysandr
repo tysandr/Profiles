@@ -1085,7 +1085,7 @@
             "type": "folder",
             "id": "QO-vjoae9",
             "desc": "",
-            "is_open": true,
+            "is_open": false,
             "children": [
               {
                 "name": "gold drop+",
@@ -1128,7 +1128,7 @@
             "type": "folder",
             "id": "QO-7vhc74",
             "desc": "",
-            "is_open": true,
+            "is_open": false,
             "children": [
               {
                 "name": "talisman+",
@@ -1223,6 +1223,15 @@
                 "output": "bash.aggregator.criticalCount()\n\n// STORMFLARE Missing\n// You breathe a series of lightning strikes in a lattice around a stout footsoldier, but he is able to quickly dart through the lattice and avoid the bulk of the lightning strikes."
               }
             ]
+          },
+          {
+            "name": "login",
+            "type": "trigger",
+            "id": "QO-wz5ac6",
+            "patterns": [
+              "^Password correct\\. Welcome to Achaea\\.$"
+            ],
+            "output": "bash.aggregator.recall()"
           }
         ]
       },
