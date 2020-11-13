@@ -1231,7 +1231,7 @@
             "patterns": [
               "^Password correct\\. Welcome to Achaea\\.$"
             ],
-            "output": "bash.aggregator.recall()"
+            "output": "setTimeout(function() {\n  bash.aggregator.recall()\n}, 1500)"
           }
         ]
       },
