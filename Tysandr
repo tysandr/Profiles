@@ -920,7 +920,7 @@
         "name": "bash, gmcp routing",
         "type": "script",
         "id": "QO-5cpznw",
-        "output": "bash = typeof bash != 'undefined' ? bash : {}\n\nbash._priorRoom = bash._priorRoom || 0\nbash._willStrike = bash._willStrike || false\nbash._strikeTimer = bash._strikeTimer || ''\nbash._roomItems = bash._roomItems || []\nbash._roomMobs  = bash._roomMobs || []\n\nbash._gmcp = function(data) {\n  let datum = data.data\n  switch (data.key) {\n    case 'Char.Items.List':\n      bash._handleItemsList(data.data)\n      break;\n      \n    case 'Room.Info':\n      bash._handleRoomChange(data.data)\n      break;\n      \n    case 'Room.Players':\n      bash._handleRoomPlayers(data.data)\n      break;\n      \n    case 'Room.AddPlayer':\n      bash._handleRoomAddPlayer(data.data)\n      break;\n    \n    case 'Room.RemovePlayer':\n      bash._handleRoomRemovePlayer(data.data)\n      break;\n      \n    default:\n      break;\n  }\n}\n\nbash._handleItemsList = function(data) {\n  if (!data.location) { return }\n  if (data.location != 'room') { return }\n  console.log(data)\n  bash._roomItems = Utilities.clone(data.items)\n  bash._roomMobs = []\n  for (var k = 0; k < bash._roomItems.length; k++) {\n    if (bash._roomItems[k].attrib == 'm') {\n      bash._roomMobs.push(bash._roomItems[k])\n    }\n  }\n  bash.display.inroom()\n}\n\nbash._handleRoomChange = function(data) {\n  var newRoom = data.num\n  if (bash.state == 1 && bash._priorRoom != newRoom) {\n    bash._willStrike = true\n    bash._priorRoom = newRoom\n    return\n  }\n  bash._willStrike = false\n}\n\nbash._handleRoomPlayers = function(data) {\n  var me = player.name\n  var alone = true\n  for (var k = 0; k < data.length; k++) {\n    let n = data[k].name\n    if (n != me) {\n      alone = false\n      return alone\n    }\n  }\n  // Alone\n  if (bash._willStrike && bash._roomItems.length > 0 && bash._roomMobs.length > 0) {\n    clearTimeout(bash._strikeTimer)\n    bash._strikeTimer = setTimeout(function() { bash.attack() }, 120 )\n  }\n  return alone\n}\n\nbash._handleRoomAddPlayer = function(data) {\n  let n = data.name\n}\n\nbash._handleRoomRemovePlayer = function(data) {\n  let n = data \n}"
+        "output": "bash = typeof bash != 'undefined' ? bash : {}\n\nbash._priorRoom = bash._priorRoom || 0\nbash._willStrike = bash._willStrike || false\nbash._strikeTimer = bash._strikeTimer || ''\nbash._roomItems = bash._roomItems || []\nbash._roomMobs  = bash._roomMobs || []\n\nbash._gmcp = function(data) {\n  let datum = data.data\n  switch (data.key) {\n    case 'Char.Items.List':\n      bash._handleItemsList(data.data)\n      break;\n      \n    case 'Room.Info':\n      bash._handleRoomChange(data.data)\n      break;\n      \n    case 'Room.Players':\n      bash._handleRoomPlayers(data.data)\n      break;\n      \n    case 'Room.AddPlayer':\n      bash._handleRoomAddPlayer(data.data)\n      break;\n    \n    case 'Room.RemovePlayer':\n      bash._handleRoomRemovePlayer(data.data)\n      break;\n      \n    default:\n      break;\n  }\n}\n\nbash._handleItemsList = function(data) {\n  if (!data.location) { return }\n  if (data.location != 'room') { return }\n  bash._roomItems = Utilities.clone(data.items)\n  bash._roomMobs = []\n  for (var k = 0; k < bash._roomItems.length; k++) {\n    if (bash._roomItems[k].attrib == 'm') {\n      bash._roomMobs.push(bash._roomItems[k])\n    }\n  }\n  bash.display.inroom()\n}\n\nbash._handleRoomChange = function(data) {\n  var newRoom = data.num\n  if (bash.state == 1 && bash._priorRoom != newRoom) {\n    bash._willStrike = true\n    bash._priorRoom = newRoom\n    return\n  }\n  bash._willStrike = false\n}\n\nbash._handleRoomPlayers = function(data) {\n  var me = player.name\n  var alone = true\n  for (var k = 0; k < data.length; k++) {\n    let n = data[k].name\n    if (n != me) {\n      alone = false\n      return alone\n    }\n  }\n  // Alone\n  if (bash._willStrike && bash._roomItems.length > 0 && bash._roomMobs.length > 0) {\n    clearTimeout(bash._strikeTimer)\n    bash._strikeTimer = setTimeout(function() { bash.attack() }, 120 )\n  }\n  return alone\n}\n\nbash._handleRoomAddPlayer = function(data) {\n  let n = data.name\n}\n\nbash._handleRoomRemovePlayer = function(data) {\n  let n = data \n}"
       },
       {
         "name": "bash.aggregator",
@@ -932,7 +932,7 @@
         "name": "bash.display",
         "type": "script",
         "id": "QO-gejp4m",
-        "output": "bash = typeof bash != 'undefined' ? bash : {}\n\nbash.display = (function(){\n    \n  var updateMobs = function() {\n    var str = ''\n    for (var j = 0; j < bash._roomMobs.length; j++) {\n      var mob = bash._roomMobs[j]\n      str += '<div class=\"bash-mobiles\" id=\"bash-mobile-' + mob.id + '\">'\n      str += mob.name + ' - ' + mob.id +  '</div>'\n    }\n    console.log(str)\n    $('.bash-summary-mobiles').empty().append(str)\n  }\n    \n  return {\n    inroom: updateMobs,\n  }\n})()"
+        "output": "bash = typeof bash != 'undefined' ? bash : {}\n\nbash.display = (function(){\n    \n  var updateMobs = function() {\n    var str = ''\n    for (var j = 0; j < bash._roomMobs.length; j++) {\n      var mob = bash._roomMobs[j]\n      str += '<div class=\"bash-mobiles\" id=\"bash-mobile-' + mob.id + '\">'\n      str += mob.name + ' - ' + mob.id +  '</div>'\n    }\n    $('.bash-summary-mobiles').empty().append(str)\n  }\n    \n  return {\n    inroom: updateMobs,\n  }\n})()"
       },
       {
         "name": "bashing-dictionary",
@@ -1006,14 +1006,14 @@
         "type": "folder",
         "id": "QO-uk9w36",
         "desc": "",
-        "is_open": false,
+        "is_open": true,
         "children": [
           {
             "name": "Logic Triggers",
             "type": "folder",
             "id": "QO-7o2ucs",
             "desc": "",
-            "is_open": false,
+            "is_open": true,
             "children": [
               {
                 "name": "slain+",
