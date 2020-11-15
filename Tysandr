@@ -955,7 +955,7 @@
         "name": "bash.rage",
         "type": "script",
         "id": "QO-xgu2fa",
-        "output": "bash = typeof bash != 'undefined' ? bash : {}\n\nbash.rage = 0\nbash.rageAvailable = []\n\nbash.rageReset = function() {\n  bash.rage = 0\n  bash.rageAvailable = []\n  $('body').trigger('bash-update-display')\n}\n\nbash.rageParse = function(list) {\n  if (!list) { return }\n  let args = list.split(',')\n  args.forEach(function(e,v){\n    let h = e.trim()\n    if (bash.rageAvailable.indexOf(h) == -1) {\n      bash.rageAvailable.push(h)\n    }\n  })\n  $('body').trigger('bash-update-display')\n}"
+        "output": "bash = typeof bash != 'undefined' ? bash : {}\n\nbash.rage = 0\nbash.rageAvailable = []\n\nbash.rageReset = function() {\n  bash.rage = 0\n  bash.rageAvailable = []\n  $('body').trigger('bash-update-display')\n}\n\nbash.rageParse = function(list) {\n  if (!list) { return }\n  let args = list.split(',')\n  args.forEach(function(e,v){\n    let h = e.trim()\n    if (bash.rageAvailable.indexOf(h) == -1) {\n      bash.rageAvailable.push(h)\n    }\n  })\n}"
       },
       {
         "name": "bash.crits",
@@ -1007,7 +1007,7 @@
         "type": "folder",
         "id": "QO-uk9w36",
         "desc": "",
-        "is_open": false,
+        "is_open": true,
         "children": [
           {
             "name": "Logic Triggers",
@@ -1162,7 +1162,7 @@
             "type": "folder",
             "id": "QO-jo6x4e",
             "desc": "",
-            "is_open": false,
+            "is_open": true,
             "children": [
               {
                 "name": "Rage-",
@@ -1181,7 +1181,7 @@
                   "^\\[Rage\\]\\: \\+\\d+\\.\\d+\\. Total\\: (\\d+\\.\\d+)",
                   "^\\[Rage\\]\\: \\+\\d+\\.\\d+\\. Total\\: (\\d+\\.\\d+) Now Available\\: (.+?)$"
                 ],
-                "output": "let A = matches[1]\nlet B = parseFloat(A)\n\nbash.rage = B\n\nbash.rageParse(matches[2])"
+                "output": "let A = matches[1]\nlet B = parseFloat(A)\n\nbash.rage = B\n\nbash.rageParse(matches[2])\n\n$('body').trigger('bash-update-display')"
               }
             ]
           },
