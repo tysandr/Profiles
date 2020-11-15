@@ -128,18 +128,18 @@
     },
     "the Azdun Catacombs": {
       "a shambling zombie": {
-        "kills": 71,
-        "gold": 8339,
+        "kills": 73,
+        "gold": 8446,
         "value": 117
       },
       "a cursed phantasm": {
-        "kills": 26,
-        "gold": 4904,
+        "kills": 27,
+        "gold": 5087,
         "value": 188
       },
       "an accursed skeleton": {
-        "kills": 297,
-        "gold": 102437,
+        "kills": 300,
+        "gold": 103378,
         "value": 344
       },
       "a vicious ghast": {
@@ -168,9 +168,9 @@
         "value": 2062
       },
       "an undead knight": {
-        "kills": 188,
-        "gold": 109682,
-        "value": 583
+        "kills": 193,
+        "gold": 112237,
+        "value": 581
       },
       "Underlord Dreyvos": {
         "kills": 16,
@@ -178,19 +178,19 @@
         "value": 2336
       },
       "a decaying lich": {
-        "kills": 20,
-        "gold": 8549,
-        "value": 427
+        "kills": 25,
+        "gold": 9875,
+        "value": 395
       },
       "Malvoc, the Unholy": {
-        "kills": 2,
-        "gold": 885,
-        "value": 442
+        "kills": 3,
+        "gold": 1265,
+        "value": 421
       },
       "Ulgase, the lich crone": {
-        "kills": 2,
-        "gold": 743,
-        "value": 371
+        "kills": 3,
+        "gold": 1211,
+        "value": 403
       },
       "a goblin ghoul": {
         "kills": 1,
@@ -237,11 +237,11 @@
     }
   },
   "crits": {
-    "strikes": 18223,
-    "CRUSHING CRITICAL": 1671,
-    "CRITICAL": 3943,
-    "ANNIHILATINGLY POWERFUL CRITICAL": 360,
-    "OBLITERATING CRITICAL": 728,
-    "WORLD-SHATTERING CRITICAL": 282
+    "strikes": 18493,
+    "CRUSHING CRITICAL": 1696,
+    "CRITICAL": 3998,
+    "ANNIHILATINGLY POWERFUL CRITICAL": 366,
+    "OBLITERATING CRITICAL": 738,
+    "WORLD-SHATTERING CRITICAL": 286
   }
 }
