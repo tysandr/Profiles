@@ -128,28 +128,28 @@
     },
     "the Azdun Catacombs": {
       "a shambling zombie": {
-        "kills": 61,
-        "gold": 7138,
+        "kills": 71,
+        "gold": 8339,
         "value": 117
       },
       "a cursed phantasm": {
-        "kills": 22,
-        "gold": 4180,
-        "value": 190
+        "kills": 26,
+        "gold": 4904,
+        "value": 188
       },
       "an accursed skeleton": {
-        "kills": 276,
-        "gold": 95515,
+        "kills": 285,
+        "gold": 98702,
         "value": 346
       },
       "a vicious ghast": {
-        "kills": 124,
-        "gold": 20750,
-        "value": 167
+        "kills": 126,
+        "gold": 21037,
+        "value": 166
       },
       "a flesh-eating slug": {
-        "kills": 167,
-        "gold": 49743,
+        "kills": 173,
+        "gold": 51384,
         "value": 297
       },
       "Underlord Seroth": {
@@ -168,19 +168,19 @@
         "value": 1981
       },
       "an undead knight": {
-        "kills": 177,
-        "gold": 104350,
-        "value": 589
+        "kills": 187,
+        "gold": 109189,
+        "value": 583
       },
       "Underlord Dreyvos": {
-        "kills": 15,
-        "gold": 34303,
-        "value": 2286
+        "kills": 16,
+        "gold": 37388,
+        "value": 2336
       },
       "a decaying lich": {
-        "kills": 16,
-        "gold": 7521,
-        "value": 470
+        "kills": 20,
+        "gold": 8549,
+        "value": 427
       },
       "Malvoc, the Unholy": {
         "kills": 2,
@@ -232,11 +232,11 @@
     }
   },
   "crits": {
-    "strikes": 17017,
-    "CRUSHING CRITICAL": 1546,
-    "CRITICAL": 3678,
-    "ANNIHILATINGLY POWERFUL CRITICAL": 339,
-    "OBLITERATING CRITICAL": 685,
-    "WORLD-SHATTERING CRITICAL": 268
+    "strikes": 17661,
+    "CRUSHING CRITICAL": 1613,
+    "CRITICAL": 3819,
+    "ANNIHILATINGLY POWERFUL CRITICAL": 350,
+    "OBLITERATING CRITICAL": 708,
+    "WORLD-SHATTERING CRITICAL": 276
   }
 }
