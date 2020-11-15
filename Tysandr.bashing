@@ -138,14 +138,14 @@
         "value": 188
       },
       "an accursed skeleton": {
-        "kills": 285,
+        "kills": 286,
         "gold": 98702,
         "value": 346
       },
       "a vicious ghast": {
-        "kills": 126,
-        "gold": 21037,
-        "value": 166
+        "kills": 128,
+        "gold": 21397,
+        "value": 167
       },
       "a flesh-eating slug": {
         "kills": 173,
@@ -196,6 +196,11 @@
         "kills": 1,
         "gold": 97,
         "value": 97
+      },
+      "unidentified mob": {
+        "gold": 363,
+        "value": 363,
+        "kills": 1
       }
     },
     "the Azdun Dungeon": {
@@ -232,11 +237,11 @@
     }
   },
   "crits": {
-    "strikes": 17661,
-    "CRUSHING CRITICAL": 1613,
-    "CRITICAL": 3819,
-    "ANNIHILATINGLY POWERFUL CRITICAL": 350,
-    "OBLITERATING CRITICAL": 708,
+    "strikes": 17694,
+    "CRUSHING CRITICAL": 1617,
+    "CRITICAL": 3824,
+    "ANNIHILATINGLY POWERFUL CRITICAL": 351,
+    "OBLITERATING CRITICAL": 710,
     "WORLD-SHATTERING CRITICAL": 276
   }
 }
