@@ -955,7 +955,7 @@
         "name": "bash.rage",
         "type": "script",
         "id": "QO-xgu2fa",
-        "output": "bash = typeof bash != 'undefined' ? bash : {}\n\nbash.rage = 0\nbash.rageAvailable = []\n\nbash.rageReset = function() {\n  bash.rage = 0\n  bash.rageAvailable = []\n}\n\nbash.rageParse = function(list) {\n  if (!list) { return }\n  let args = list.split(',')\n  args.forEach(function(e,v){\n    let h = e.trim()\n    if (bash.rageAvailable.indexOf(h) == -1) {\n      bash.rageAvailable.push(h)\n    }\n  })\n}"
+        "output": "bash = typeof bash != 'undefined' ? bash : {}\n\nbash.rage = 0\nbash.rageAvailable = []\n\nbash.rageReset = function() {\n  bash.rage = 0\n  bash.rageAvailable = []\n  $('body').trigger('bash-update-display')\n}\n\nbash.rageParse = function(list) {\n  if (!list) { return }\n  let args = list.split(',')\n  args.forEach(function(e,v){\n    let h = e.trim()\n    if (bash.rageAvailable.indexOf(h) == -1) {\n      bash.rageAvailable.push(h)\n    }\n  })\n  $('body').trigger('bash-update-display')\n}"
       },
       {
         "name": "bash.crits",
@@ -1007,7 +1007,7 @@
         "type": "folder",
         "id": "QO-uk9w36",
         "desc": "",
-        "is_open": true,
+        "is_open": false,
         "children": [
           {
             "name": "Logic Triggers",
