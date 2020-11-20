@@ -52,9 +52,9 @@
         "value": 272
       },
       "a mhun conjuror": {
-        "kills": 87,
-        "gold": 17823,
-        "value": 204
+        "kills": 88,
+        "gold": 18108,
+        "value": 205
       },
       "an adolescent mhun": {
         "kills": 21,
@@ -148,9 +148,9 @@
         "value": 166
       },
       "a flesh-eating slug": {
-        "kills": 183,
-        "gold": 54516,
-        "value": 297
+        "kills": 184,
+        "gold": 54900,
+        "value": 298
       },
       "Underlord Seroth": {
         "kills": 14,
@@ -237,10 +237,10 @@
     }
   },
   "crits": {
-    "strikes": 18856,
-    "CRUSHING CRITICAL": 1734,
-    "CRITICAL": 4065,
-    "ANNIHILATINGLY POWERFUL CRITICAL": 374,
+    "strikes": 18878,
+    "CRUSHING CRITICAL": 1737,
+    "CRITICAL": 4073,
+    "ANNIHILATINGLY POWERFUL CRITICAL": 375,
     "OBLITERATING CRITICAL": 753,
     "WORLD-SHATTERING CRITICAL": 294
   }
