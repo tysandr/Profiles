@@ -2,19 +2,19 @@
   "datum": {
     "Moghedu": {
       "a mhun guard": {
-        "kills": 194,
-        "gold": 25969,
-        "value": 133
+        "kills": 196,
+        "gold": 26287,
+        "value": 134
       },
       "a master mhun miner": {
-        "kills": 40,
-        "gold": 8131,
-        "value": 203
+        "kills": 43,
+        "gold": 8902,
+        "value": 207
       },
       "a mhun labourer": {
-        "kills": 71,
-        "gold": 9379,
-        "value": 132
+        "kills": 73,
+        "gold": 9631,
+        "value": 131
       },
       "an elite mhun keeper": {
         "kills": 74,
@@ -22,8 +22,8 @@
         "value": 501
       },
       "a mhun miner": {
-        "kills": 143,
-        "gold": 21015,
+        "kills": 149,
+        "gold": 21778,
         "value": 146
       },
       "Guard Captain Haedra": {
@@ -57,9 +57,9 @@
         "value": 205
       },
       "an adolescent mhun": {
-        "kills": 24,
-        "gold": 602,
-        "value": 28
+        "kills": 25,
+        "gold": 648,
+        "value": 25
       },
       "a mhun demolitionist": {
         "kills": 38,
@@ -67,9 +67,9 @@
         "value": 120
       },
       "a master mhun demolitionist": {
-        "kills": 6,
-        "gold": 729,
-        "value": 121
+        "kills": 7,
+        "gold": 883,
+        "value": 126
       },
       "Mhunk, an inattentive mhun miner": {
         "kills": 5,
@@ -237,11 +237,11 @@
     }
   },
   "crits": {
-    "strikes": 19099,
-    "CRUSHING CRITICAL": 1762,
-    "CRITICAL": 4115,
-    "ANNIHILATINGLY POWERFUL CRITICAL": 382,
-    "OBLITERATING CRITICAL": 765,
-    "WORLD-SHATTERING CRITICAL": 297
+    "strikes": 19190,
+    "CRUSHING CRITICAL": 1773,
+    "CRITICAL": 4143,
+    "ANNIHILATINGLY POWERFUL CRITICAL": 384,
+    "OBLITERATING CRITICAL": 769,
+    "WORLD-SHATTERING CRITICAL": 299
   }
 }
