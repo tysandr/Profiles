@@ -2,8 +2,8 @@
   "datum": {
     "Moghedu": {
       "a mhun guard": {
-        "kills": 179,
-        "gold": 23936,
+        "kills": 188,
+        "gold": 25187,
         "value": 133
       },
       "a master mhun miner": {
@@ -42,9 +42,9 @@
         "value": 162
       },
       "a mhun archer": {
-        "kills": 63,
-        "gold": 10756,
-        "value": 170
+        "kills": 66,
+        "gold": 11304,
+        "value": 171
       },
       "a mhun bodyguard": {
         "kills": 13,
@@ -52,8 +52,8 @@
         "value": 272
       },
       "a mhun conjuror": {
-        "kills": 88,
-        "gold": 18108,
+        "kills": 90,
+        "gold": 18289,
         "value": 205
       },
       "an adolescent mhun": {
@@ -87,9 +87,9 @@
         "value": 117
       },
       "Guard Captain Darion": {
-        "kills": 3,
-        "gold": 561,
-        "value": 187
+        "kills": 4,
+        "gold": 745,
+        "value": 186
       },
       "Master Scout Madira": {
         "kills": 2,
@@ -237,11 +237,11 @@
     }
   },
   "crits": {
-    "strikes": 18878,
-    "CRUSHING CRITICAL": 1737,
-    "CRITICAL": 4073,
-    "ANNIHILATINGLY POWERFUL CRITICAL": 375,
-    "OBLITERATING CRITICAL": 753,
-    "WORLD-SHATTERING CRITICAL": 294
+    "strikes": 18996,
+    "CRUSHING CRITICAL": 1750,
+    "CRITICAL": 4097,
+    "ANNIHILATINGLY POWERFUL CRITICAL": 376,
+    "OBLITERATING CRITICAL": 757,
+    "WORLD-SHATTERING CRITICAL": 296
   }
 }
