@@ -50,12 +50,6 @@
         ]
       },
       {
-        "name": "codebox.behaviours",
-        "type": "script",
-        "id": "QO-672kz6",
-        "output": "$('body')\n  .off('QO-Coding-moused')\n  .off('QO-Coding-unmoused')\n  .on('QO-Coding-moused', function() { \n    $('#QO-Coding').css('opacity','100%') })\n  .on('QO-Coding-unmoused', function() {\n    $('#QO-Coding').css('opacity','45%')\n  })"
-      },
-      {
         "name": "meta",
         "type": "script",
         "id": "QO-fki0wz",
@@ -139,6 +133,21 @@
             "output": "meta = typeof meta != 'undefined' ? meta : {}\n\nmeta.triggers = (function(){\n  // filter & display\n  let list = function(str) {\n    let rpad = Utilities.rpad\n    let lpad = Utilities.lpad\n    let C = Utilities.clone\n    let T = Triggers.list\n    let prefix = Client.prefix\n    \n    let U = []\n    let B = 0\n    for (var j = 0, len = T.length; j < len; j++) {\n      var trigger = T[j]\n      var tr;\n      if (str) {\n        if (trigger.pattern.match(str)) {\n          tr = C(trigger)\n          tr.id = j\n          U.push(tr)\n        } else if (trigger.name.match(str)) {\n          tr = C(trigger)\n          tr.id = j\n          U.push(tr)\n        }\n      } else {\n        tr = C(trigger)\n        tr.id = j\n        U.push(tr)\n      }\n    }\n    let out = ''\n    for (var k = 0, leng = U.length; k < leng; k++) {\n      var trig = U[k]\n      var s = ''\n      s += '<span class=\"mute\">' \n      s += '<span class=\"mute ' + (trig.uuid ? trig.uuid : '') + '\">' + lpad(trig.id, 5) + '</span> '\n      s += '<span class=\"deepblack\">&compfn;</span> '\n      s += '<span class=\"bal \">' + rpad(trig.name.substring(0, 17), 18) + '</span>: '\n      s += '<span class=\"mute\">' + trig.pattern + '</span>'\n      s += '</span>\\n'\n      s = prefix(s) + s\n      out += s\n    }\n    let a;\n    if (str) {\n        a = '==== Trigger search (<span class=\"normal\">' + str + '</span>) '\n    } else {\n        a = '==== Triggers '\n    }\n    a = '<span class=\"black\">' + rpad(a, 91, '=') + '</span>'\n    out = prefix('') + '\\n' + prefix('') + a + '\\n' + out + prefix('') + '\\n'\n    Core.printdown(out)\n  }\n  \n  return {\n    list  : list,\n  }\n})()"
           }
         ]
+      }
+    ]
+  },
+  {
+    "name": "Behaviours",
+    "type": "folder",
+    "id": "QO-j3rhq0",
+    "desc": "",
+    "is_open": true,
+    "children": [
+      {
+        "name": "codebox.behaviours",
+        "type": "script",
+        "id": "QO-672kz6",
+        "output": "\n$('body')\n  .off('QO-Coding-moused')\n  .off('QO-Coding-unmoused')\n  \nif (true) {\n $('body')\n  .on('QO-Coding-moused', function() { \n    $('#QO-Coding').css('opacity','100%') })\n  .on('QO-Coding-unmoused', function() {\n    $('#QO-Coding').css('opacity','75%')\n  })\n}"
       }
     ]
   },
