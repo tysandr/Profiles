@@ -50,7 +50,7 @@
         ]
       },
       {
-        "name": "codebox behaviours",
+        "name": "codebox.behaviours",
         "type": "script",
         "id": "QO-672kz6",
         "output": "$('body')\n  .off('QO-Coding-moused')\n  .off('QO-Coding-unmoused')\n  .on('QO-Coding-moused', function() { \n    $('#QO-Coding').css('opacity','100%') })\n  .on('QO-Coding-unmoused', function() {\n    $('#QO-Coding').css('opacity','45%')\n  })"
