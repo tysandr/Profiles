@@ -902,7 +902,7 @@
     "type": "folder",
     "id": "QO-48xl1h",
     "desc": "",
-    "is_open": true,
+    "is_open": false,
     "output": "/*\n\n Events\n  bash-draw\n  bash-undraw\n  bash-update-display\n  \n */",
     "children": [
       {
@@ -1323,14 +1323,14 @@
     "type": "folder",
     "id": "QO-dpp42p",
     "desc": "",
-    "is_open": true,
+    "is_open": false,
     "children": [
       {
         "name": "Chat Window",
         "type": "folder",
         "id": "QO-mrm5yv",
         "desc": "",
-        "is_open": true,
+        "is_open": false,
         "children": [
           {
             "name": "chat, initial",
@@ -1390,7 +1390,7 @@
         "type": "folder",
         "id": "QO-hgto0p",
         "desc": "",
-        "is_open": true,
+        "is_open": false,
         "children": [
           {
             "name": "ambient, gold+",
@@ -1460,7 +1460,7 @@
         "type": "folder",
         "desc": "Feel free to also delete this with impunity.",
         "id": "QO-m8lvcw",
-        "is_open": true,
+        "is_open": false,
         "output": "",
         "children": [
           {
@@ -1644,7 +1644,7 @@
         "type": "folder",
         "id": "QO-qwdjas",
         "desc": "",
-        "is_open": true,
+        "is_open": false,
         "children": [
           {
             "name": "prospecting",
