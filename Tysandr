@@ -56,12 +56,6 @@
         "output": "meta = typeof meta != 'undefined' ? meta : {}\n\n"
       },
       {
-        "name": "Unnamed Script",
-        "type": "script",
-        "id": "QO-v5o5g1",
-        "output": ""
-      },
-      {
         "name": "meta.gmcpEvents",
         "type": "script",
         "id": "QO-m9m159",
