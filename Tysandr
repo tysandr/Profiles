@@ -19,7 +19,7 @@
     "type": "folder",
     "id": "QO-5rr6sk",
     "desc": "",
-    "is_open": true,
+    "is_open": false,
     "output": "/*\n > Self/System\n   >> References the system and performs meta tasks\n   >> Handles initial GMCP routing\n   >> Includes:\n       [ ] performance manager\n       [ ] remote data manager\n       [ ] debugging\n       [ ] timing\n       [-] window manager\n       [ ] logging protocol\n       [x] trigger manager\n       [ ] keybinds\n       [ ] color manager\n       \n */",
     "children": [
       {
@@ -201,7 +201,7 @@
     "type": "folder",
     "id": "QO-ttkwt1",
     "desc": "",
-    "is_open": true,
+    "is_open": false,
     "children": [
       {
         "name": "pdb",
@@ -1332,14 +1332,14 @@
     "type": "folder",
     "id": "QO-dpp42p",
     "desc": "",
-    "is_open": true,
+    "is_open": false,
     "children": [
       {
         "name": "Chat Window",
         "type": "folder",
         "id": "QO-mrm5yv",
         "desc": "",
-        "is_open": true,
+        "is_open": false,
         "children": [
           {
             "name": "chat, initial",
@@ -1372,7 +1372,7 @@
         "type": "folder",
         "id": "QO-vlm8cl",
         "desc": "",
-        "is_open": true,
+        "is_open": false,
         "children": [
           {
             "name": "ew, enter wilderness",
