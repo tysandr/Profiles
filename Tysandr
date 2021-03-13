@@ -3,7 +3,7 @@
     "name": "TIMEOUT",
     "type": "trigger",
     "patterns": [
-      ""
+      "^You will TIMEOUT in 1 minute unless you do something\\.$"
     ],
     "output": " Core.send(\"p nothing\")",
     "id": "QO-ouj0sv"
