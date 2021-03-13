@@ -201,7 +201,7 @@
     "type": "folder",
     "id": "QO-ttkwt1",
     "desc": "",
-    "is_open": false,
+    "is_open": true,
     "children": [
       {
         "name": "pdb",
@@ -213,7 +213,7 @@
         "name": "pdb, css-rules",
         "type": "script",
         "id": "QO-vciths",
-        "output": "pdb = typeof pdb != 'undefined' ? pdb : {}\n\npdb.className = 'pdb-rules'\n\npdb.inject = function(rule) {\n  if (!rule) { return }\n  $('body').append('<div class=\"' + pdb.className + '\">&shy;<style>' + rule + '</style></div>')\n}\n\npdb.css = function() {\n  let print  = Core.printdown\n  let prefix = Client.prefix\n  \n  $('.' + pdb.className).remove()\n \n  pdb.inject(`\n   .pdb-Player {\n     color: rgb(108, 108, 108);\n   }\n   .pdb-Ashtan {\n     color: rgb(163, 0, 133);\n   }\n   .pdb-Cyrene {\n     color: rgb(145, 145, 35);   \n   }\n   .pdb-Eleusis {\n     color: rgb(23, 173, 60);\n   }\n   .pdb-Hashan {\n     color: rgb(230, 127, 9);\n   }\n   .pdb-Mhaldor {\n     color: rgb(209, 4, 62);\n   }\n   .pdb-Targossas {\n     color: rgb(109, 194, 227);\n   }\n  `)\n  \n  var p   = '<span class=\"mute\">' + prefix() + '</span>'\n  var str = ''\n  str += p + '<span class=\"pdb-Player\">Rogue</span>\\n'\n  str += p + '<span class=\"pdb-Ashtan\">Ashtan</span>\\n'\n  str += p + '<span class=\"pdb-Cyrene\">Cyrene</span>\\n'\n  str += p + '<span class=\"pdb-Eleusis\">Eleusis</span>\\n'\n  str += p + '<span class=\"pdb-Hashan\">Hashan</span>\\n'\n  str += p + '<span class=\"pdb-Mhaldor\">Mhaldor</span>\\n'\n  str += p + '<span class=\"pdb-Targossas\">Targossas</span>\\n'\n  // print(str)\n}\n\npdb.css()"
+        "output": "pdb = typeof pdb != 'undefined' ? pdb : {}\n\npdb.className = 'pdb-rules'\n\npdb.inject = function(rule) {\n  if (!rule) { return }\n  $('body').append('<div class=\"' + pdb.className + '\">&shy;<style>' + rule + '</style></div>')\n}\n\npdb.css = function() {\n  let print  = Core.printdown\n  let prefix = Client.prefix\n  \n  $('.' + pdb.className).remove()\n \n  pdb.inject(`\n   .pdb-Player {\n     color: rgb(108, 108, 110;\n   }\n   .pdb-Ashtan {\n     color: rgb(163, 0, 133);\n   }\n   .pdb-Cyrene {\n     color: rgb(145, 145, 35);   \n   }\n   .pdb-Eleusis {\n     color: rgb(23, 173, 60);\n   }\n   .pdb-Hashan {\n     color: rgb(230, 127, 9);\n   }\n   .pdb-Mhaldor {\n     color: rgb(209, 4, 62);\n   }\n   .pdb-Targossas {\n     color: rgb(109, 194, 227);\n   }\n  `)\n  \n  var p   = '<span class=\"mute\">' + prefix() + '</span>'\n  var str = ''\n  str += p + '<span class=\"pdb-Player\">Rogue</span>\\n'\n  str += p + '<span class=\"pdb-Ashtan\">Ashtan</span>\\n'\n  str += p + '<span class=\"pdb-Cyrene\">Cyrene</span>\\n'\n  str += p + '<span class=\"pdb-Eleusis\">Eleusis</span>\\n'\n  str += p + '<span class=\"pdb-Hashan\">Hashan</span>\\n'\n  str += p + '<span class=\"pdb-Mhaldor\">Mhaldor</span>\\n'\n  str += p + '<span class=\"pdb-Targossas\">Targossas</span>\\n'\n  // print(str)\n}\n\npdb.css()"
       },
       {
         "name": "pdb, gmcp routing",
