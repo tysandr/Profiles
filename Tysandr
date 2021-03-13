@@ -9,12 +9,6 @@
     "id": "QO-ouj0sv"
   },
   {
-    "name": "Query One is a new client",
-    "type": "script",
-    "id": "QO-m8xy4v",
-    "output": "/* New Client */"
-  },
-  {
     "name": "Notes for Reference System",
     "type": "script",
     "id": "QO-2u69wu",
